@@ -1,7 +1,7 @@
 ---
-anchor: "Services"
-header: "Services"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+anchor: "Intro"
+header: "Introduction"
+subheader: "Why should you learn to code?"
 services: [
   {
     iconName: "ShoppingCartIcon",

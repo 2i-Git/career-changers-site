@@ -38,6 +38,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       social: Social
       services: [Service]
       teamMember: [TeamMember]
+      lessons: [Lesson]
     }`,
     `type TeamMember {
       social: Social
@@ -57,6 +58,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       github: String
     }
     `,
+    `
+    type Lesson {
+      header: String
+      content: String
+    }`,
   ];
 
   createTypes(typeDefs);

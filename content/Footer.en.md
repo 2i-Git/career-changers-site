@@ -1,7 +1,7 @@
 ---
-copyright: "Copyright © Start Bootstrap 2020"
+copyright: "Copyright © 2i Testing 2022"
 social: {
-  twitter: "#",
+  # twitter: "#",
   facebook: "#",
   medium: "#"
 }

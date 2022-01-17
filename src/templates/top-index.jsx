@@ -93,6 +93,10 @@ export const query = graphql`
             imageFileName
             subheader
           }
+          lessons {
+            header
+            content
+          }
         }
         fields {
           fileName

@@ -36,6 +36,9 @@ const Team = ({ className, frontmatter }) => {
         <Col lg={8} className="mx-auto text-center">
           <p className="large text-muted">{rootContent}</p>
         </Col>
+        <Col>
+          <p>XAMPLE TAXT</p>
+        </Col>
       </Row>
     </PageSection>
   );

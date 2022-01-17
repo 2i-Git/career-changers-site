@@ -1,4 +1,4 @@
 ---
-brand: "Start Bootstrap"
+brand: "Code for Career Changers"
 menuText: "Menu "
 ---
