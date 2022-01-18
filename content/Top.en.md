@@ -2,6 +2,6 @@
 header: "Learn to code!"
 subheader: "Looking for your next step?"
 imageFileName: "background.jpg"
-jumpToAnchor: "Services"
+jumpToAnchor: "Intro"
 jumpToAnchorText: "Let's get started!"
 ---

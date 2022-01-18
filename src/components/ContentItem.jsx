@@ -7,7 +7,7 @@ import gfm from 'remark-gfm'
 import ShowHideButton from "./ShowHideButton";
 
 
-// import { Container } from "react-bootstrap";
+
 
 const ContentItem = ({ header, content }) => {
 
@@ -15,17 +15,15 @@ const ContentItem = ({ header, content }) => {
 
     return (
         <div>
-            <Container fluid={true}>
-                <Row>
-                    <Col lg={1}>
-                        <button variant="primary" type="button" onClick={() => setShow((s) => !s)}> {show ? 'hide' : 'Show'} </button>
-                    </Col>
-                    <Col>
-                        <h2>{header}</h2>
-                    </Col>
+            <Row>
+                <Col lg={1}>
+                    <button variant="primary" type="button" onClick={() => setShow((s) => !s)}> {show ? 'hide' : 'Show'} </button>
+                </Col>
+                <Col>
+                    <h2>{header}</h2>
+                </Col>
 
-                </Row>
-            </Container>
+            </Row>
 
             <div style={{ display: show ? 'block' : 'none' }}>
                 <ReactMarkdown remarkPlugins={[gfm]}>{content}</ReactMarkdown>
