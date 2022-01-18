@@ -1,13 +1,13 @@
 ---
-anchor: "Presenting your work"
+anchor: "Career change Stories"
 header: "Our Amazing Team"
 subheader: "Lorem ipsum dolor sit amet consectetur."
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+content: "Think you might have what it takes to join us? Get in touch"
 teamMember: [
   {
     imageFileName: "team/1.jpg",
     header: "Kay Garland",
-    subheader: "Lead Designer",
+    subheader: "Former Biologist",
     social: {
       twitter: "#",
       facebook: "#",

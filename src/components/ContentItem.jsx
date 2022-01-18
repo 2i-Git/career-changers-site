@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import { Row, Col, Container } from "react-bootstrap";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import ShowHideButton from "./ShowHideButton";
+
 
 // import { Container } from "react-bootstrap";
 
 const ContentItem = ({ header, content }) => {
+
+    const [show, setShow] = useState(false)
+
     return (
         <div>
-            <h3>{header}</h3>
-            <ReactMarkdown remarkPlugins={[gfm]}>{content}</ReactMarkdown>
-        </div>
+            <Container fluid={true}>
+                <Row>
+                    <Col lg={1}>
+                        <button variant="primary" type="button" onClick={() => setShow((s) => !s)}> {show ? 'hide' : 'Show'} </button>
+                    </Col>
+                    <Col>
+                        <h2>{header}</h2>
+                    </Col>
+
+                </Row>
+            </Container>
+
+            <div style={{ display: show ? 'block' : 'none' }}>
+                <ReactMarkdown remarkPlugins={[gfm]}>{content}</ReactMarkdown>
+                <p />
+            </div>
+        </div >
     );
 };
 
