@@ -5,3 +5,4 @@ export { default as Services } from "./Services";
 export { default as Team } from "./Team";
 export { default as Basics } from "./Basics";
 export { default as Interview } from "./Interview";
+export { default as Github } from "./Github";
