@@ -11,6 +11,7 @@ const TeamMember = ({
   imageAlt,
   header,
   subheader,
+  story,
   social: { twitter, facebook, linkedin, github, medium },
 }) => {
   const twitterPart = twitter ? <SocialIcons.Twitter userName={twitter} /> : null;
@@ -28,6 +29,11 @@ const TeamMember = ({
       />
       <h4>{header}</h4>
       <p className="text-muted">{subheader}</p>
+      <div>
+        <span>“</span>
+        <span className="font-italic">{story}</span>
+        <span>”</span>
+      </div>
       <div>
         {twitterPart}
         {facebookPart}
@@ -51,6 +57,7 @@ TeamMember.propTypes = {
     github: PropTypes.string,
     medium: PropTypes.string,
   }),
+  story: PropTypes.string,
 };
 
 TeamMember.defaultProps = {
@@ -64,6 +71,7 @@ TeamMember.defaultProps = {
     github: null,
     medium: null,
   },
+  story: ""
 };
 
 export default TeamMember;

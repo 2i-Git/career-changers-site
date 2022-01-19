@@ -41,6 +41,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       lessons: [Lesson]
     }`,
     `type TeamMember {
+      header: String
+      imageFileName: String
+      subheader: String
+      story: String
       social: Social
     }`,
     `type Service {
