@@ -1,7 +1,7 @@
 ---
 anchor: "Career change Stories"
-header: "Our Amazing Team"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+header: "Career Changers at 2i"
+subheader: ""
 content: "Think you might have what it takes to join us? Get in touch"
 teamMember: [
   {
@@ -20,14 +20,14 @@ teamMember: [
     social: {
       linkedin: "#"
     },
-    story:  "I was working the lab late one night, when my eyes beheld an eerie sight. For my monster from his slab, began to rise and suddenly to my surprise...He did the monster mash"
+    story:  "With a background in life sciences degree and food and beverage QC, I thought that my path was set, but I picked up coding as a hobby and something was sparked in me. I discovered that a career change was not only possible but that this new industry brought together so many things I enjoyed: problem solving, designing, creating and having real pride in tangible efforts."
   },
   {
     imageFileName: "team/3.jpg",
     header: "Lewis Saunders",
     subheader: "Test Automation Engineer",
     social: {
-      linkedin: "lewis-n-saunders/"
+      linkedin: "in/lewis-n-saunders/"
     },
     story: "Coming from an arts background, I was amazed at how many skills transferred over to tech, and by how much I was able to bring to the table right away."
   },

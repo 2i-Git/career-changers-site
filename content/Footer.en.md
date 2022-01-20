@@ -2,8 +2,7 @@
 copyright: "Copyright © 2i Testing 2022"
 social: {
   # twitter: "#",
-  facebook: "#",
-  medium: "#"
+  linkedin: "company/2i-group/mycompany/"
 }
 privacyText: "Privacy Policy"
 privacyHref: "#!"

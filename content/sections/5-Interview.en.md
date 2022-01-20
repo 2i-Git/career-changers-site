@@ -33,8 +33,8 @@ Now that you’re eating code challenges for breakfast, you’ll (hopefully) be 
 *	Present yourself well. There’s no need to wear anything too formal but try not to look like you just rolled out of bed (even if you just did). If you’re interviewing remotely, check how your room looks on webcam. If it’s anything short of an Architectural Digest cover, just stick a background filter on.
 
 
-#### Relaxing:
-
+#### Relaxing:  
+  
 Job interviews are stressful, nobody likes them. Here are some tips that may help you relax:
 
 *	Prepare as best you can. This sounds obvious but being prepared will genuinely help you relax. If the company has not told you what to expect on the day, you can always ask!
