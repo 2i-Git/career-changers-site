@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { Row, Col } from "react-bootstrap";
 import Icon from "components/Icon";
 import PageSection from "components/PageSection";
+import Image from "components/Image";
 
 const Contact = ({ className, frontmatter }) => {
   if (!frontmatter) {
@@ -19,6 +20,15 @@ const Contact = ({ className, frontmatter }) => {
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
           <p className="text-muted mb-5">{subheader}</p>
+        </Col>
+        <Col>
+          {/* <img id="biglogo" src="content\assets\images\logos\logo-icon-large.png" alt="2i logo" /> */}
+          {/* <Image
+            id="contactlogo"
+            fileName="logo-icon-large.png"
+            alt="2i logo"
+          /> */}
+
         </Col>
       </Row>
       <Row>

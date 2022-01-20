@@ -80,6 +80,10 @@ module.exports = {
             file: "https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap",
           },
           {
+            name: "Space Mono",
+            file: "https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap",
+          },
+          {
             name: "Roboto Slab",
             file: "https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap",
           },

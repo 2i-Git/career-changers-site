@@ -6,7 +6,7 @@ services: [
   {
     iconName: "BrainIcon",
     header: "All kinds of people can do it",
-    content: "The idea that working in tech requires a gold star in maths, a membership to MENSA and a complete lack of social skills is no longer the case. Forward-thinking tech companies now look to hire diverse teams of people, all of whom can bring their own unique talents."
+    content: "The idea that working in tech requires a gold star in maths and a membership to MENSA is no longer the case. Forward-thinking tech companies now look to hire diverse teams of people, all of whom can bring their own unique talents."
   },
   {
     iconName: "LaptopIcon",

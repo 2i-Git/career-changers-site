@@ -17,7 +17,7 @@ const ContentItem = ({ header, content }) => {
         <div>
             <Row>
                 <Col lg={1}>
-                    <button variant="primary" type="button" onClick={() => setShow((s) => !s)}> {show ? 'hide' : 'Show'} </button>
+                    <button variant="primary" type="button" className="btn btn-primary" onClick={() => setShow((s) => !s)}> {show ? 'hide' : 'Show'} </button>
                 </Col>
                 <Col>
                     <h2>{header}</h2>
