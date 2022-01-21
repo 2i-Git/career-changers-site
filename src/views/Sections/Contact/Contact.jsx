@@ -21,15 +21,22 @@ const Contact = ({ className, frontmatter }) => {
           <hr className="divider my-4" />
           <p className="text-muted mb-5">{subheader}</p>
         </Col>
+      </Row>
+      <Row>
+        <Col />
         <Col>
           {/* <img id="biglogo" src="content\assets\images\logos\logo-icon-large.png" alt="2i logo" /> */}
-          {/* <Image
+          <Image
             id="contactlogo"
+            className="md-auto"
             fileName="logo-icon-large.png"
             alt="2i logo"
-          /> */}
+            layout="fixed"
+            width={300}
+          />
 
         </Col>
+        <Col />
       </Row>
       <Row>
         <Col lg={4} className="ml-auto text-center">

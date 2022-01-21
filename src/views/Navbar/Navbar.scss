@@ -3,17 +3,18 @@
   // background-color: $gray-900;
   background-color: $navy;
   .navbar-toggler {
-    font-size: 12px;
+    font-size: 20px;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
+    font-weight: 100;
     color: white !important;
     border: 0;
     background-color: $primary;
     @include heading-font;
   }
   .navbar-brand {
-    color: $primary !important;
+    color: $white !important;
     text-shadow: 0 0 100px $lightblu,
     0 0 32px $lightblu;
     @include brand-font;
@@ -21,7 +22,7 @@
     &:active,
     &:focus,
     &:hover {
-      color: darken($primary, 10%) !important;
+      color: darken($white, 20%) !important;
     }
   }
 }
@@ -43,7 +44,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: $navy;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
