@@ -6,6 +6,7 @@ import Navbar from "views/Navbar";
 import Top from "views/Top";
 import Footer from "views/Footer";
 import * as Sections from "views/Sections";
+import CookieConsent from "react-cookie-consent";
 import SEO from "components/SEO";
 import LanguageSelector from "components/LanguageSelector";
 
@@ -108,6 +109,24 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
+      <CookieConsent
+        location="bottom"
+        buttonText="Accept"
+        enableDeclineButton={true}
+        declineButtonText="No Thank You"
+        debug={true}
+        style={{
+          background: "#212529",
+          "font-family": "Roboto,sans-serif"
+        }}
+        buttonStyle={{
+          "border-radius": "3px",
+          background: "#1553A8",
+          color: "white"
+        }}
+        declineButtonStyle={{ "border-radius": "3px" }} >
+        This site uses cookies, but not the delicious kind. We use them to enhance the user experience.
+      </CookieConsent>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}
