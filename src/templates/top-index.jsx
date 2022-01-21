@@ -124,8 +124,9 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
           background: "#1553A8",
           color: "white"
         }}
-        declineButtonStyle={{ "border-radius": "3px" }} >
-        This site uses cookies, but not the delicious kind. We use them to enhance the user experience.
+        declineButtonStyle={{ "border-radius": "3px" }} flipButtons >
+        <strong>This site currently does not use cookies, this banner is for demo purposes. </strong> We use them to enhance and customise your browsing experience, as well as for analytics and metrics about our visitors on this website.
+        If you decline, your information will not be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
       </CookieConsent>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
