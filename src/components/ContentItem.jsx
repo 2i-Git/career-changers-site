@@ -6,6 +6,8 @@ import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import ShowHideButton from "./ShowHideButton";
 
+import "./ContentItem.scss";
+
 
 
 
@@ -15,7 +17,7 @@ const ContentItem = ({ header, content }) => {
 
     return (
         <div>
-            <Row>
+            <Row className="chapter-header">
                 <Col lg={1}>
                     <button variant="primary" type="button" className="btn btn-primary" onClick={() => setShow((s) => !s)}> {show ? 'hide' : 'Show'} </button>
                 </Col>
