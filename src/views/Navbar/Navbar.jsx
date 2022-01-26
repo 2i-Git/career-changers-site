@@ -30,10 +30,12 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
   }, [closeMenu, handleScrollToTop]);
 
   const [shrink, setShrink] = React.useState(false);
+
   const handleWindowScroll = React.useCallback(() => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     setShrink(scrollTop > 100);
   }, []);
+
   useWindowOnScroll(handleWindowScroll);
 
   return (

@@ -5,7 +5,7 @@ subheader: "Over the next six lessons, you'll learn everything you need to start
 lessons: [
     {
         header: "Lesson 1: JavaScript and Node",
-        content: '
+        content: "
 
 Throughout this guide, we will be working in JavaScript. Why JavaScript? Because it is used everywhere! Javascript is used in modern web frameworks like React (created and used by Meta/Facebook) and Vue (used by Netflix and others), it is used to script tests in frameworks like Cypress and Postman, it can even be used to create art and visuals using libraries like three.js and p5.js. In fact, according to PluralSight, it is the number one most learned technology on their platform.
 
@@ -30,26 +30,27 @@ The best way to learn to code is by doing, so for best results you will want to 
 If you follow along with the lessons you should end with a repl just like these ones. These are just provided for reference.
 
 
-[lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)
+[lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)/n
 
-[lesson 3](https://replit.com/@LewisSaunders1/lesson3#index.js)
+[lesson 3](https://replit.com/@LewisSaunders1/lesson3#index.js)\n
 
-[lesson 4](https://replit.com/@LewisSaunders1/lesson4#index.js)
+[lesson 4](https://replit.com/@LewisSaunders1/lesson4#index.js)\n
 
 [lesson 5](https://replit.com/@LewisSaunders1/lesson5#index.js)
 
-[lesson 6](https://replit.com/@LewisSaunders1/lesson6#index.js) '
+[lesson 6](https://replit.com/@LewisSaunders1/lesson6#index.js) "
     },
     {
         header: "Lesson 2: Variables, print statements and comments",
-        content: '
+        content: "
         
     Let’s jump straight into some code. Type this into your repl and hit “run”.
 
 
     ```
+    javascript
 
-    let myName = “Lewis”
+    let myName = 'Lewis'
 
     console.log(myName)
 
@@ -75,7 +76,7 @@ If you follow along with the lessons you should end with a repl just like these 
 
 
     ```
-        Example 2
+    javascript
 
     // say we have a count of people entering a venue
 
@@ -111,19 +112,20 @@ If you follow along with the lessons you should end with a repl just like these 
         The downside of variables is that they are sometimes too easy to change! So what if you want to hold onto a value that will not change during runtime? We would use a constant instead. Constants are declared just like variables, except that we use const instead of let.
 
         ```
+        javascript
 
-        const iAm = "Douglas"
+        const iAm = 'Douglas'
 
         console.log(iAm)
 
 
-        // here, I am attempting to change the value of iAm to "Stephen"
+        // here, I am attempting to change the value of iAm to 'Stephen'
 
-        iAm = "Stephen"
+        iAm = 'Stephen'
 
         // but, it causes an error, because iAm is a constant
 
-        console.log(iAm)
+       console.log(iAm)
 
         ```
 
@@ -132,8 +134,8 @@ If you follow along with the lessons you should end with a repl just like these 
         TIP: Being sure to use a constant rather than a variable when appropriate will look good on a code challenge, as they make code less prone to bugs.
 
 
-        TIP: In javascript, you can also declare a variable using "var". This is an older style that still pops up now and then in code, but is generally discouraged as it can be accessed anywhere in the code ("globally scoped"), as opposed to "let" which can only be referred to from the block of code in which it is declared ("block scoped"). This article covers scope in more detail and with examples.
-        '
+        TIP: In javascript, you can also declare a variable using 'var'. This is an older style that still pops up now and then in code, but is generally discouraged as it can be accessed anywhere in the code ('globally scoped'), as opposed to 'let' which can only be referred to from the block of code in which it is declared ('block scoped'). This article covers scope in more detail and with examples.
+        "
     },
     {
         header: "Lesson 3: Data types, operators, and string concatenation",
@@ -149,6 +151,7 @@ Numbers in JavaScript can be either integers (aka whole numbers) or floating-poi
 
 
 ```
+javascript
 
 // examples of numbers
 
@@ -166,6 +169,7 @@ Strings are text assigned to a variable. They can be a letter, a word, a space, 
 
 
 ```
+javascript
 
 // examples of strings
 
@@ -182,6 +186,7 @@ const space = " "
 Boolean variables have only two possible states: true or false. Remember that in JavaScript true and false are not capitalised.
 
 ```
+javascript
 
 // examples of booleans
 
@@ -204,6 +209,7 @@ Undefined is different from null in that it represents a variable that has not y
 
 
 ```
+javascript
 
 // examples of null and undefined
 
@@ -222,6 +228,7 @@ Operators are used to add, subtract, multiply and divide numbers. You may not be
 
 
 ```
+javascript
 
 // setting up some numbers to operate on
 
@@ -273,6 +280,7 @@ You can also use the addition operator (+) with strings, although it has a sligh
 
 
 ```
+javascript
 
 // string concatenation
 
@@ -290,6 +298,7 @@ console.log(firstName + lastName)
 As you can see, the two strings were added together, but there is a space missing. A common trick when concatenating strings is to also concatenate additional spaces.
 
 ```
+javascript
 
 // adding in spaces
 
@@ -303,6 +312,7 @@ console.log(firstName + " " + lastName)
 A property of strings that you may often use is the length of the string:
 
 ```
+javascript
 
 // string length
 
@@ -328,12 +338,13 @@ Functions are incredibly important and useful, but are often a little misunderst
 
 
 ```
+javascript
 
 // a simple function that takes in two numbers, and multiplies them together
 
-function multiplier (number1, number2) {
+function multiplier (number1, number2) { 
 
-  return number1 * number2
+   return number1 * number2  
 
 }
 
@@ -369,12 +380,13 @@ The biggest advantage of writing a function is that it can be reused over and ov
 
 
 ```
+javascript
 
 // An example of a function with poor reusability
 
-function divider (number1){
+function divider (number1){  
 
-  return number1 / 7
+   return number1 / 7
 
 }
 
@@ -390,22 +402,23 @@ As functions get to be more complex, they can become long, hard to read and less
 
 
 ```
+javascript
 
 // an example of a function which calls other (imaginary) functions from within
 
 function takeCardPayment(cardNumber, price, shoppingCart){
 
-const priceWithVat = calculatePricePlusVat(price)
+   const priceWithVat = calculatePricePlusVat(price)
 
-const validated =  validateCardWithBank(cardNumber)
+   const validated =  validateCardWithBank(cardNumber)
 
-if (validated === true) {
+   if (validated === true) {
 
-        takePayment(cardNumber, priceWithVat)
+      takePayment(cardNumber, priceWithVat)
 
-        removeFromStock(shoppingCart)
+      removeFromStock(shoppingCart)
 
-}
+   }
 
 }
 
@@ -430,6 +443,7 @@ Arrays are essentially a list of elements that be all of the same type, or of di
 
 
 ```
+javascript
 
 // simple arrays
 
@@ -450,6 +464,7 @@ console.log(fruits[2])
 
 
 ```
+javascript
 
 // adding a new value to the end of an array
 
@@ -463,6 +478,7 @@ console.log(fruits)
 
 
 ```
+javascript
 
 // removing a value from the end of an array
 
@@ -475,6 +491,7 @@ console.log(fruits)
 > prints: ["apple","orange","banana"]
 
 ```
+javascript
 
 // removing a value from the front of an array
 
@@ -487,6 +504,7 @@ console.log(fruits)
 > prints: ["orange","banana"]
 
 ```
+javascript
 
 // adding a value to the front of an array
 
@@ -499,12 +517,15 @@ console.log(fruits)
 > prints: ["fig","orange","banana"]
 
 ```
+javascript
 
 // the index of a value can be found using indexOf
 
 const pos = fruits.indexOf("orange")
 
-// we can then use splice to remove the item at the found position. The first argument tells splice where to start removing elements, and the second tells how many elements to remove
+// we can then use splice to remove the item at the found position. 
+
+// The first argument tells splice where to start removing elements, and the second tells how many elements to remove
 
 const shoppingBasket = fruits.splice(pos,1)
 
@@ -518,6 +539,7 @@ console.log(shoppingBasket)
 Tip: .pop() and .shift() both return the removed value. If you want to store this value and use it elsewhere, you can assign it to a variable like this:
 
 ```
+javascript
 
 const removedFruit = fruits.pop()
 
@@ -528,6 +550,7 @@ const removedFruit = fruits.pop()
 Objects are similar to arrays in that they are collections of elements. The issue with arrays is that they can only be accessed by an index, and their order is not strictly guaranteed. Objects are different because they use key and value pairs to arrange information. You can think of the key as the label that be used to look up the value. Similar to arrays, the value can be data type, including nested arrays and objects. This allows us to construct and access complex data structures.
 
 ```
+javascript
 
 const car = {brand:"Honda", model:"Jazz", colour:"orange"}
 
@@ -544,14 +567,15 @@ console.log(car.brand)
 
 
 ```
+javascript
 
 // objects can also be defined across several lines
 
 const bike = {
     
-  brand: "Raleigh",
+   brand: "Raleigh",
 
-  model: "Randonneur"
+   model: "Randonneur"
 
 }
 
@@ -579,6 +603,7 @@ console.log(bike)
 > }
 
 ```
+javascript
 
 // should you need to delete a key/value pair
 
@@ -591,6 +616,7 @@ console.log(bike)
 > prints: "{ brand: "Raleigh", model: "Randonneur", colour: "metallic blue" }"
 
 ```
+javascript
 
 // example of nested objects/arrays
 
@@ -598,41 +624,41 @@ console.log(bike)
 
 const zoo = {
 
-  name: "Edinburgh Zoo",
+   name: "Edinburgh Zoo",
 
-animals: [
+   animals: [
 
-{
+      {
 
-id: 1,
+         id: 1,
 
-name: "Tom",
+         name: "Tom",
 
-species: "Tiger"
+         species: "Tiger"
 
-},
+      },
 
-{
+      {
 
-id: 2,
+         id: 2,
 
-name: "Jerry",
+         name: "Jerry",
 
-species: "Capybara"
+         species: "Capybara"
 
-},
+      },
 
-{
+      {
 
-id: 3,
+         id: 3,
 
-name: "Sheryl",
+         name: "Sheryl",
 
-species: "Tarantula"
+         species: "Tarantula"
 
-}
+      }
 
-]
+      ]
 
 }
 
@@ -669,6 +695,7 @@ A very common situation when iterating through a data structure is that we want 
 
 
 ```
+javascript
 
 // if and else statements
 
@@ -676,13 +703,13 @@ const x = 1
 
 if (x === 1) {
 
-     console.log("this will run if x equals 1")
+         console.log("this will run if x equals 1")
 
-     } else {
+      } else {
 
-       console.log("this will run if x does not equal 1")
+         console.log("this will run if x does not equal 1")
 
-       }
+      }
 
 ```
 
@@ -694,18 +721,19 @@ A while loop will repeat for as long as a condition remains true. These are ofte
 
 
 ```
+javascript
 
 // while loops
 
 while (true) {
     
-  const input = prompt("press q to exit: ")
+   const input = prompt("press q to exit: ")
 
-  if (input == "q"){
+   if (input == "q"){
 
-    break
+      break
 
-  }
+   }
 
 }
 
@@ -716,12 +744,13 @@ For loops will run for a predefined length. This is either defined manually in a
 
 
 ```
+javascript
 
 // traditional style for loop
 
 for (let i=0; i<10; i++) {
 
-  console.log("I am a counting machine: "+(i+1))
+   console.log("I am a counting machine: "+(i+1))
 
 }
 
@@ -739,18 +768,18 @@ for (let i=0; i<10; i++) {
 
 const guitar = {
 
-  brand: "Fender",
+   brand: "Fender",
 
-  model: "Telecaster",
+   model: "Telecaster",
 
-  finish: "Sunburst"
+   finish: "Sunburst"
 
 }
 
 
 for (property in guitar) {
 
-  console.log("the "+ property + " of this guitar is: " + guitar[property])
+   console.log("the "+ property + " of this guitar is: " + guitar[property])
 
 }
 
@@ -762,9 +791,9 @@ const numbers = [13,25,76,99,22,86,247]
 
 const counter = {
 
-  odd: 0,
+   odd: 0,
 
-  even: 0
+   even: 0
 
 }
 
@@ -773,21 +802,21 @@ const counter = {
 
 for (number of numbers) {
 
-  // this line checks to see if the number can be divided by two without a remainder
+   // this line checks to see if the number can be divided by two without a remainder
 
-  if (number % 2 === 0) {
+   if (number % 2 === 0) {
 
-    // if the IF resolves to true, then this line will run
+      // if the IF resolves to true, then this line will run
 
-    counter.even += 1
+      counter.even += 1
 
-  } else {
+   } else {
 
-    // if the IF is falsem then this line will run instead
+      // if the IF is falsem then this line will run instead
 
-    counter.odd += 1
+      counter.odd += 1
 
-  }
+   }
 
 }
 
@@ -799,6 +828,7 @@ To make our if statement work, we use comparators. In the example above we used 
 
 
 ```
+plain
 
 // comparators
 
@@ -892,6 +922,7 @@ We are designing a system for a rollercoaster, which you must be taller than or 
 Given an input of :
 
 ```
+javascript
 
 const visitorHeights = [88, 129, 130, 154, 200]
 
@@ -906,6 +937,7 @@ The expected result is:
 
 
 ```
+javascript
 
 function checkQueueHeights(visitorHeights,minimumHeight){
 
@@ -919,10 +951,11 @@ function checkQueueHeights(visitorHeights,minimumHeight){
 
 
 ```
+javascript
 
 function checkQueueHeights(visitorHeights,minimumHeight){
 
-  const result = []
+   const result = []
 
 }
 
@@ -933,16 +966,17 @@ function checkQueueHeights(visitorHeights,minimumHeight){
 
 
 ```
+javascript
 
 function checkQueueHeights(visitorHeights,minimumHeight){
 
-  const result = []
+   const result = []
 
 
-  for (visitor of visitorHeights) {
+   for (visitor of visitorHeights) {
 
 
-  }
+   }
 
 }
 
@@ -952,23 +986,24 @@ function checkQueueHeights(visitorHeights,minimumHeight){
 
 
 ```
+javascript
 
 function checkQueueHeights(visitorHeights,minimumHeight){
 
-  const result = []
+   const result = []
 
 
-  for (visitor of visitorHeights) {
+   for (visitor of visitorHeights) {
 
-    if (visitor >= minimumHeight) {
+      if (visitor >= minimumHeight) {
 
-      // adds boolean true value to the result array
+         // adds boolean true value to the result array
 
-      result.push(true)
+         result.push(true)
 
-    }
+      }
 
-  }
+   }
 
 }
 
@@ -979,29 +1014,30 @@ function checkQueueHeights(visitorHeights,minimumHeight){
 
 
 ```
+javascript
 
 function checkQueueHeights(visitorHeights,minimumHeight){
 
-  const result = []
+   const result = []
 
 
-  for (visitor of visitorHeights) {
+   for (visitor of visitorHeights) {
 
-    if (visitor >= minimumHeight) {
+      if (visitor >= minimumHeight) {
 
-      // adds boolean true value to the result array
+         // adds boolean true value to the result array
 
-      result.push(true)
+         result.push(true)
 
-    } else {
+      } else {
 
-      // adds boolean false value to the result array
+         // adds boolean false value to the result array
 
-      result.push(false)
+         result.push(false)
 
-    }
+      }
 
-  }
+   }
 
 }
 
@@ -1011,32 +1047,33 @@ function checkQueueHeights(visitorHeights,minimumHeight){
 ###### 6.	Now to complete the function, we need to return the completed array of Boolean values. This will come at the end of the function, outside of the loop.
 
 ```
+javascript
 
 function checkQueueHeights(visitorHeights,minimumHeight){
 
-  const result = []
+   const result = []
 
 
-  for (visitor of visitorHeights) {
+   for (visitor of visitorHeights) {
 
-    if (visitor >= minimumHeight) {
+      if (visitor >= minimumHeight) {
 
-      // adds boolean true value to the result array
+         // adds boolean true value to the result array
 
-      result.push(true)
+         result.push(true)
 
-    } else {
+      } else {
 
-      // adds boolean false value to the result array
+         // adds boolean false value to the result array
 
-      result.push(false)
+         result.push(false)
 
-    }
+      }
 
-  }
+   }
 
 
-  return result
+   return result
 
 }
 
@@ -1045,6 +1082,7 @@ function checkQueueHeights(visitorHeights,minimumHeight){
 ###### 7.	Finally, we need to call the function with some arguments in order to see the results.
 
 ```
+javascript
 
 const scannerOutput = [88, 129, 130, 154, 200]
 
