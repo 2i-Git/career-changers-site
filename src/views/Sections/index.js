@@ -6,3 +6,4 @@ export { default as Team } from "./Team";
 export { default as Basics } from "./Basics";
 export { default as Interview } from "./Interview";
 export { default as Github } from "./Github";
+export { default as Challenges } from "./Challenges";
