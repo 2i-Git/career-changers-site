@@ -24,12 +24,13 @@ Arrow functions essentially strip out some of the keywords associated with funct
 
 
 ```
+javascript
 
 // traditional function
 
 function greet (name) {
 
-  return "hello, my name is " + name
+   return "hello, my name is " + name
 
 }
 
@@ -40,12 +41,13 @@ Now, we are going to make this function into an anonymous function. That is, we�
 
 
 ```
+javascript
 
 // traditional anonymous function
 
 let greet = function (name) {
 
-  return "hello my name is " + name
+   return "hello my name is " + name
 
 }
 
@@ -56,12 +58,13 @@ And now into an arrow function.
 
 
 ```
+javascript
 
 // remove the word function, and replace it with an arrow after the parameter
 
 let greet = (name) => {
 
-  return "hello my name is " + name
+   return "hello my name is " + name
 
 }
 
@@ -100,6 +103,7 @@ In this lesson, we will cover a few of the very useful methods which take an arr
 
 
 ```
+javascript
 
 // Class Methods & Callbacks
 
@@ -123,27 +127,27 @@ names.forEach(name => console.log("presenting: " + name))
 
 const indexToOrdinal = number => {
 
-  // a switch statement is like multiple ifs at once
+   // a switch statement is like multiple ifs at once
  
- switch (number) {
+   switch (number) {
 
-    case 0:
+      case 0:
 
-      return (number+1)+"st"
+         return (number+1)+"st"
 
-    case 1:
+      case 1:
 
-      return (number+1)+"nd"
+         return (number+1)+"nd"
 
-    case 2:
+      case 2:
 
-      return (number+1)+"rd"
+         return (number+1)+"rd"
 
-    default:
+      default:
 
-      return (number+1)+"th"
+         return (number+1)+"th"
 
-  }
+   }
 
 }
 
@@ -152,9 +156,9 @@ const indexToOrdinal = number => {
 
 numbers.forEach( (number, index) => {
 
-  const ord = indexToOrdinal(index)
+   const ord = indexToOrdinal(index)
 
-  console.log("...and the " + ord +  " lottery number is... " + number + "!")
+   console.log("...and the " + ord +  " lottery number is... " + number + "!")
 
 })
 
@@ -167,15 +171,15 @@ numbers.forEach( (number, index) => {
 
 const isDivisibleByFive = numbers.map( number => {
 
-  if (number % 5 === 0) {
+   if (number % 5 === 0) {
 
-    return true
+      return true
 
-  } else {
+   } else {
 
-    return false
+      return false
 
-  }
+   }
 
 })
 

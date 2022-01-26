@@ -1,29 +1,21 @@
+/* eslint react/no-children-prop: 0 */
+/* eslint react/no-unstable-nested-components: 0 */
+
 import React, { useState } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 import ReactMarkdown from 'react-markdown'
-import gfm from 'remark-gfm'
-import ShowHideButton from "./ShowHideButton";
+import gfm from 'remark-gfm';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 import "./ContentItem.scss";
-// import { StaticQuery, graphql } from "gatsby";
-// import { query } from "templates/top-index";
 
 
 
 const ContentItem = ({ header, content }) => {
 
     const [show, setShow] = useState(false)
-
-    //     < StaticQuery
-    // query = { graphql`
-    //         query LessonContentQuery {
-    //             content: allFile {
-
-    //             }
-    //         }
-    //     `};
 
     return (
         <div>
@@ -38,7 +30,24 @@ const ContentItem = ({ header, content }) => {
             </Row>
 
             <div style={{ display: show ? 'block' : 'none' }}>
-                <ReactMarkdown remarkPlugins={[gfm]}>{content}</ReactMarkdown>
+                <ReactMarkdown children={content} remarkPlugins={[gfm]} components={{
+                    code({ node, inline, className, children, ...props }) {
+                        const match = /language-(\w+)/.exec(className || '')
+                        return !inline && match ? (
+                            <SyntaxHighlighter
+                                children={String(children).replace(/\n$/, '')}
+                                style={dark}
+                                language={match[1]}
+                                PreTag="div"
+                                {...props}
+                            />
+                        ) : (
+                            <code className={className} {...props}>
+                                {children}
+                            </code>
+                        )
+                    }
+                }} />
                 <p />
             </div>
         </div >
