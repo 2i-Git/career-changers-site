@@ -7,13 +7,23 @@ import gfm from 'remark-gfm'
 import ShowHideButton from "./ShowHideButton";
 
 import "./ContentItem.scss";
-
+// import { StaticQuery, graphql } from "gatsby";
+// import { query } from "templates/top-index";
 
 
 
 const ContentItem = ({ header, content }) => {
 
     const [show, setShow] = useState(false)
+
+    //     < StaticQuery
+    // query = { graphql`
+    //         query LessonContentQuery {
+    //             content: allFile {
+
+    //             }
+    //         }
+    //     `};
 
     return (
         <div>
@@ -33,6 +43,7 @@ const ContentItem = ({ header, content }) => {
             </div>
         </div >
     );
+
 };
 
 ContentItem.propTypes = {

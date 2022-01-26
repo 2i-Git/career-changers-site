@@ -19,7 +19,7 @@ const Contact = ({ className, frontmatter }) => {
         <Col lg={8} className="text-center">
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
-          <p className="text-muted mb-5">{subheader}</p>
+          <p className="text-dark mb-5">{subheader}</p>
         </Col>
       </Row>
       <Row>
