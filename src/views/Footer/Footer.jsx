@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import { Container, Row, Col } from "react-bootstrap";
 import * as SocialIcons from "components/SocialIcons";
+import InfoModal from "components/InfoModal";
 
 const Footer = ({ frontmatter }) => {
+
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const handleClosePrivacy = () => setShowPrivacy(false);
+  const handleOpenPrivacy = () => setShowPrivacy(true);
+
+  const [showTerms, setShowTerms] = useState(false);
+  const handleCloseTerms = () => setShowTerms(false);
+  const handleOpenTerms = () => setShowTerms(true);
+
   if (!frontmatter) {
     return null;
   }
@@ -33,10 +43,14 @@ const Footer = ({ frontmatter }) => {
             {medium ? <SocialIcons.Medium userName={medium} /> : null}
           </Col>
           <Col lg={4} className="text-lg-right">
-            <a className="mr-3" href={privacyHref}>
+            <a className="mr-3" href={privacyHref} onClick={handleOpenPrivacy}>
               {privacyText}
             </a>
-            <a href={termsHref}>{termsText}</a>
+            <InfoModal className="dhj" closeModal={handleClosePrivacy} show={showPrivacy} text="Dfkdd" title="Privacy Policy" />
+
+            <a href={termsHref} onClick={handleOpenTerms}>{termsText}</a>
+            <InfoModal className="dhj" closeModal={handleCloseTerms} show={showTerms} text="Dfkdd" title="Terms of Use" />
+
           </Col>
         </Row>
       </Container>
