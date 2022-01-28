@@ -23,8 +23,10 @@ const Footer = ({ frontmatter }) => {
     copyright,
     privacyHref,
     privacyText,
+    privacyContent,
     termsHref,
     termsText,
+    termsContent,
     social: { facebook, github, linkedin, medium, twitter },
   } = frontmatter;
 
@@ -46,10 +48,10 @@ const Footer = ({ frontmatter }) => {
             <a className="mr-3" href={privacyHref} onClick={handleOpenPrivacy}>
               {privacyText}
             </a>
-            <InfoModal className="dhj" closeModal={handleClosePrivacy} show={showPrivacy} text="Dfkdd" title="Privacy Policy" />
+            <InfoModal className="dhj" closeModal={handleClosePrivacy} show={showPrivacy} text={privacyContent} title="Privacy Policy" />
 
             <a href={termsHref} onClick={handleOpenTerms}>{termsText}</a>
-            <InfoModal className="dhj" closeModal={handleCloseTerms} show={showTerms} text="Dfkdd" title="Terms of Use" />
+            <InfoModal className="dhj" closeModal={handleCloseTerms} show={showTerms} text={termsContent} title="Terms of Use" />
 
           </Col>
         </Row>

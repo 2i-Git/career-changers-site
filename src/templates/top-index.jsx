@@ -45,6 +45,7 @@ export const query = graphql`
           menuText
           privacyHref
           privacyText
+          privacyContent
           services {
             content
             header
@@ -75,6 +76,7 @@ export const query = graphql`
           telephone
           termsHref
           termsText
+          termsContent
           title
           lessons {
             header
