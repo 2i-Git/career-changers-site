@@ -13,13 +13,11 @@ Throughout this guide, we will be working in JavaScript. Why JavaScript? Because
 Another great reason to learn JavaScript is that it is a comparatively beginner-friendly language: it is reasonably easy to read, has a forgiving syntax, and a lot of the more complex functionality is abstracted into nice, easy to use methods.
 
 
-While JavaScript may look pretty “computerish”, it is in fact much closer to English than anything that a computer can understand. So, we need compilers and translators to facilitate running of our code. Node.js is the runtime most used to achieve this in JavaScript. You can install Node to your device and try writing and running some JavaScript locally, but for the purpose of this guide we recommend using a sandbox like [Replit](replit.com). Replit is a free, in-browser development platform where you can quickly spin up a Node environment and start coding. Sandboxes like replit are great, because they are safe environments where you cannot do any damage. If the code freezes up, you can always just close the tab and open a new one.
+While JavaScript may look pretty “computerish”, it is in fact much closer to English than anything that a computer can understand. So, we need compilers and translators to facilitate running of our code. Node.js is the runtime most used to achieve this in JavaScript. You can install Node to your device and try writing and running some JavaScript locally, but for the purpose of this guide we recommend using a sandbox like [Replit](replit.com). Replit is a free, in-browser development platform where you can quickly spin up a Node environment and start coding. Sandboxes like replit are great, because they are safe environments where you cannot do any damage to your computer. If the code freezes up, you can always just close the tab and open a new environment.
 
 
-The other advantage is that you will not have to use the command line to install and run software like you would if you were learning on your computer. The command line (usually command prompt on Windows, terminal on MacOS) is a way of controlling your computer using text commands. It is incredibly useful, and we will touch on it in a later chapter but for now save yourself the hassle and use a sandbox.
+The other advantage is that you will not have to use the command line to install and run software like you would if you were learning on your computer. The command line (usually command prompt on Windows, terminal on MacOS) is a way of controlling your computer using text commands. It is incredibly useful, and we will touch on it in a later chapter but for now save yourself the hassle and use a sandbox. Replit have an excellent getting started video which you can follow [here](https://youtu.be/ZAC0TQEU5gI). Just make sure to pick a Node repl template.
 
-
-[MAY NEED TO INCLUDE A QUICKSTART GUIDE FOR REPLIT, MAYBE ON ANOTHER PAGE]
 
 
 The best way to learn to code is by doing, so for best results you will want to put this site side-by-side with a blank Node repl and follow along with the lessons. If you find that you’re curious about something, follow that curiosity! Change the code, break it and see if you can fix it again. That is a great way to develop your understanding. 
@@ -30,13 +28,17 @@ The best way to learn to code is by doing, so for best results you will want to 
 If you follow along with the lessons you should end with a repl just like these ones. These are just provided for reference.
 
 
-[lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)/n
+[lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)  
 
-[lesson 3](https://replit.com/@LewisSaunders1/lesson3#index.js)\n
 
-[lesson 4](https://replit.com/@LewisSaunders1/lesson4#index.js)\n
+[lesson 3](https://replit.com/@LewisSaunders1/lesson3#index.js)  
 
-[lesson 5](https://replit.com/@LewisSaunders1/lesson5#index.js)
+
+[lesson 4](https://replit.com/@LewisSaunders1/lesson4#index.js)  
+
+
+[lesson 5](https://replit.com/@LewisSaunders1/lesson5#index.js)  
+
 
 [lesson 6](https://replit.com/@LewisSaunders1/lesson6#index.js) "
     },
@@ -61,9 +63,9 @@ If you follow along with the lessons you should end with a repl just like these 
 
     * We declared a variable using “let”, gave it a name of “myName” and gave it a value of “Lewis”.
 
-    * We only need to use let when first declaring the variable, after that we can refer to it by its name.
+    * We only need to use “let” when first declaring the variable, after that we can refer to it by its name.
 
-    * We then printed the variable called myName to the console. The console log shows the value of myName.
+    * We then printed the variable called “myName” to the console. The console log shows the value of myName.
 
 
     Try changing “Lewis” to your name and running the code again
@@ -134,7 +136,7 @@ If you follow along with the lessons you should end with a repl just like these 
         TIP: Being sure to use a constant rather than a variable when appropriate will look good on a code challenge, as they make code less prone to bugs.
 
 
-        TIP: In javascript, you can also declare a variable using 'var'. This is an older style that still pops up now and then in code, but is generally discouraged as it can be accessed anywhere in the code ('globally scoped'), as opposed to 'let' which can only be referred to from the block of code in which it is declared ('block scoped'). This article covers scope in more detail and with examples.
+        TIP: In javascript, you can also declare a variable using 'var'. This is an older style that still pops up now and then in code, but is generally discouraged as it can be accessed anywhere in the code ('globally scoped'), as opposed to 'let' which can only be referred to from the block of code in which it is declared ('block scoped'). [This article](https://www.tutorialspoint.com/es6/es6_variables.htm) covers scope in more detail and with examples.
         "
     },
     {
@@ -547,7 +549,7 @@ const removedFruit = fruits.pop()
 
 ### Objects:
 
-Objects are similar to arrays in that they are collections of elements. The issue with arrays is that they can only be accessed by an index, and their order is not strictly guaranteed. Objects are different because they use key and value pairs to arrange information. You can think of the key as the label that be used to look up the value. Similar to arrays, the value can be data type, including nested arrays and objects. This allows us to construct and access complex data structures.
+Objects are similar to arrays in that they are collections of elements. The issue with arrays is that they can only be accessed by an index, and their order is not strictly guaranteed. Objects are different because they use key and value pairs to arrange information. You can think of the key as the label that be used to look up the value. Similar to arrays, the value can be any data type, including nested arrays and objects. This allows us to construct and access complex data structures.
 
 ```
 javascript
@@ -677,7 +679,7 @@ console.log(zoo["animals"][2]["species"])
 > Prints: "Edinburgh Zoo", "Jerry" and "Tarantula"
 
 
-For an in depth guide to working with Objects, the [MDN guide] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) is an excellent resource 
+For an in depth guide to working with Objects, the [MDN guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) is an excellent resource 
 
         '
     },
@@ -755,9 +757,9 @@ for (let i=0; i<10; i++) {
 }
 
 
-// let i=0 - sets up a counter
+// let i=0 - sets up a counter (i starts at zero in this case)
 
-//  i<10 - sets the end condition
+//  i<10 - sets the end condition (run while i is less than 10)
 
 //  i++ - increments the counter on every iteration. Could also be i-- to count down
 
@@ -812,7 +814,7 @@ for (number of numbers) {
 
    } else {
 
-      // if the IF is falsem then this line will run instead
+      // if the IF is false then this line will run instead
 
       counter.odd += 1
 
@@ -830,89 +832,187 @@ To make our if statement work, we use comparators. In the example above we used 
 ```
 plain
 
-// comparators
+comparators
 
 
-// equals
+equals (has the same value)
 
-// ==
+==
 
-// given that x = 3
+given that x = 3
 
-// x == 8 will resolve as false 
+x == 8 will resolve as false 
 
-// x == 3 will resolve as true  
+x == 3 will resolve as true  
 
-// x == "3" will resolve as true
-
-
-// strongly equals (has the same value and data type)
-
-// ===
-
-// given that x = 3
-
-// x === 8 will resolve as  false 
-
-// x === 3  will resolve as true  
-
-// x === "3" will resolve as false
+x == "3" will resolve as true
 
 
-// does not equal/does not strongly equal
+strongly equals (has the same value and data type)
 
-// !=/!==
+===
 
-// Given that x=7
+given that x = 3
 
-// x != 9 will resolve as true
+x === 8 will resolve as  false 
 
-// x !== 7 will resolve as false
+x === 3  will resolve as true  
 
-// x !== "7" will resolve as true
-
-// x !== 8 will resolve as true
+x === "3" will resolve as false
 
 
-// greater than/greater than or equal to
+does not equal/does not strongly equal
 
-// >/>=
+!=/!==
 
-// Given that x = 10
+Given that x=7
 
-// x > 5 will resolve to true
+x != 9 will resolve as true
 
-// x > 10 will resolve to false
+x !== 7 will resolve as false
 
-// x >= 5 will resolve to true
+x !== "7" will resolve as true
 
-// x >= 10 will resolve to true
+x !== 8 will resolve as true
+
+
+greater than/greater than or equal to
+
+>/>=
+
+Given that x = 10
+
+x > 5 will resolve to true
+
+x > 10 will resolve to false
+
+x >= 5 will resolve to true
+
+x >= 10 will resolve to true
 
 
 
-// less than/less than or equal to
+less than/less than or equal to
 
-// </<=
+</<=
 
-// Given that x=8
+Given that x=8
 
-// x < 10 will resolve to true
+x < 10 will resolve to true
 
-// x < 8 will resolve to false
+x < 8 will resolve to false
 
-// x <= 10 will resolve to true
+x <= 10 will resolve to true
 
-// x <= 8 will resolve to true
+x <= 8 will resolve to true
 
 ```
 
 
-[SHOULD ALSO PROBABLY GET SOMETHING IN THERE ABOUT && AND || OPS]
+### Combining comparators
 
-[SHOULD ALSO MENTION TRUTHY AND FALSY]
+Sometimes we may need to assert against multiple conditions at once. We could do this using nested if statements, but that can get messy quickly. Instead we can use AND (&&) and OR (||) operators.
 
 
-Now we are ready to start thinking about coding challenges. Let’s start with a guided one.
+```
+plain
+
+AND
+
+&&
+
+if statement will only resolve as true if both conditions are passed
+
+
+OR
+
+||
+
+if statement will resolve as true is either condition is passed
+
+```
+
+
+```
+javascript
+
+// Example: you cannot board a plane unless you have a passport AND enough money to buy a ticket
+
+const myPassport = true
+
+let myWallet = 200
+
+
+function canBoardPlane (passport, wallet) {
+
+   if (passport && wallet >= 150) {
+
+      return true
+
+   } else {
+
+      return false
+
+   }
+
+}
+
+
+console.log(canBoardPlane(myPassport,myWallet))
+
+
+```
+
+
+### Truthy and Falsy
+
+An important aspect of Javascript is that it is *loosely-typed*. This means that we can assign a value to a variable without having to explicitly state the data type. The compiler just infers what data type the variable should be. This makes Javascript simpler to learn, read and write in general, but it can also occasionally slip us up as data can be interpreted as a different type. A simple example is a string containing the number "3". This can be interpreted by the compiler as a string, or as a number if we were to write an if statement containing " "3" >= 3".
+
+In the same vein, all data can be interpreted as a boolean value and we call this *truthy* or *falsy* . The rules that govern these are sometimes a bit strange, so you can always just look up a list like this one:
+
+```
+plain
+
+Examples of truthy values
+
+true (a boolean true)
+
+"false" (any string containing text, including the word "false")
+
+[] (an empty array)
+
+{} (an empty object)
+
+function(){} (an empty function)
+
+3 (any number except zero)
+
+-10
+
+
+examples of falsy values
+
+false (a boolean false)
+
+"" (an empty string)
+
+0 (number of zero)
+
+-0
+
+null
+
+undefined
+
+NaN (not a number, a special number type)
+
+```
+'
+    },
+    { header: "Lesson 7: Guided Coding Challenge",
+    content:
+    '
+Now we are ready to start thinking about coding challenges.
 
 
 
