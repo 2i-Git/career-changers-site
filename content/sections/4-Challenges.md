@@ -60,7 +60,7 @@ const noPillsToGive = (totalDosage, dosePerPill) => {
         A debugger will pause the code at set points called *breakpoints* and show the developer what variables are being held in memory, and what values those variables are holding on to. They essentially allow the developer to look inside of the code.
 
 
-In sandbox environments like Replit, or those that you find in online sandboxes, we rarely have access to fully featured debuggers, so we usually rely on print statements instead. Print statements like console.log() are an essential tool for quickly debugging your code as you write it. Here are some reasons that you may use console.log() in a code challenge:  
+In sandbox environments like Replit we rarely have access to fully featured debuggers, so we usually rely on print statements instead. Print statements like console.log() are an essential tool for quickly debugging your code as you write it. Here are some reasons that you may use console.log() in a code challenge:  
 
 1.	To check that a block of code runs
 
@@ -212,7 +212,7 @@ Possible solutions are available [here](https://replit.com/@LewisSaunders1/codin
     {
         header: "Coding challenge 2",
         content: '
-        A shop wants a function to automatically find the item in stock which has the most capital tied up in stock (amount of stock * price) so that they can put that item on sale. 
+       **Challenge: A shop wants a function to automatically find the item in stock which has the most capital tied up in stock (amount of stock * price) so that they can put that item on sale.**
         
 
         The function takes in an array of objects and outputs a single object.
@@ -261,7 +261,10 @@ Possible solutions are available [here](https://replit.com/@LewisSaunders1/codin
 [CodeWars]( https://www.codewars.com/) will scale up the challenge as you complete challenges, and it will show you how other people have approached the same problem. 
 
 
-[Advent of Code]( https://adventofcode.com/) publishes new coding challenges leading up to Christmas and there are lots of forum threads of people taking the challenges further in new and unexpected ways! If you find that you learn best in a social/team setting, you can get involved with Hackathons! They run year-round and are a great opportunity to meet people and do some intense (but fun) upskilling.
+[Advent of Code]( https://adventofcode.com/) publishes new coding challenges leading up to Christmas and there are lots of forum threads of people taking the challenges further in new and unexpected ways! 
+
+
+If you find that you learn best in a social/team setting, you can get involved with Hackathons! They run year-round and are a great opportunity to meet people and do some intense (but fun) upskilling.
 
 
 TIP: A common pitfall for those that do coding challenges is the idea that a shorter answer is always better. In the real world, writing clean, easy to understand, well commented code is much more helpful to your colleagues than a wildly complex one-line solution. Save the one-liners for Code Wars!

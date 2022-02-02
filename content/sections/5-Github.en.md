@@ -6,7 +6,7 @@ lessons: [
     {
         header: "Lesson 1: Command Line Interfaces",
         content: '
-        When an ordinary user interacts with their computer, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
+        When most users interact with their computer, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
 
 
 However, there is a more efficient and powerful way to interact with your computer and it’s one that’s essential for any programmer, software developer or test engineer such as yourself. That way is via the **command line** or **CLI**, a text based interface that allows the user to do everything a GUI does as well as many more advanced operations.  
@@ -18,7 +18,7 @@ On Windows machines the default command line interface is called **Command Promp
 Let’s walk through how to do some everyday operations using the command line. First, open cmd (type “cmd” into the Windows search bar) or Terminal (search “Terminal” in finder).
 
 
-If you’re using Windows, you’ll see this: `C:\Users\YOUR NAME HERE>`. On Mac, it’ll show `[INSERT MAC PATH HERE]`. No doubt you’ve seen something like this before when saving a file or installing a piece of software. This is a *file path*, effectively an address to a particular location in your computer. In this case, it’s the file path of your current working directory, the place you’ll always start from when you open your command line interface. As you navigate into different directories, you’ll see this current working directory update to reflect where you are now. Let’s see that in action.
+If you’re using Windows, you’ll see this: `C:\Users\YOUR NAME HERE>`. On Mac, you may see `~`, which is just a shorthand for the home directory, or you may see the name of a folder. No doubt you’ve seen something like this before when saving a file or installing a piece of software. This is a *file path*, effectively an address to a particular location in your computer. In this case, it’s the file path of your current working directory, the place you’ll always start from when you open your command line interface. As you navigate into different directories, you’ll see this current working directory update to reflect where you are now. Let’s see that in action.
 
 
 First type `dir` (`ls` on Mac) and press enter. This command will list all of the folders inside your current working directory. Next type `start .` (`open .`) and hit enter. A window will open showing you the same location via the GUI. Compare the folders names in the new window to the list of directory names in cmd and you’ll see they’re all the same. (N.b. the `.` in `start .` is shorthand for your current working directory).  
@@ -27,19 +27,18 @@ First type `dir` (`ls` on Mac) and press enter. This command will list all of th
 Next, let’s make a new folder using the command `mkdir`. Type `mkdir new_folder` and then enter. Now, using either the `dir` (`ls`) command or `start .` (`open .`), check to see that folder has been created. 
 
 
-Nice - we’ve made a new folder, so let’s get inside it. To change directories we use the command `cd`. Type `cd new_folder` then enter. You’ll see that the current working directory has changed, and now reads `C:\Users\YOUR NAME HERE\new_folder` `[INSERT MAC PATH HERE]`. Again, you can confirm you are using `start .`
-
+Nice - we’ve made a new folder, so let’s get inside it. To change directories we use the command `cd`. Type `cd new_folder` then enter. You’ll see that the current working directory has changed, and now reads `C:\Users\YOUR NAME HERE\new_folder` or `new_folder` on MacOS.
 
 Next, let’s make a file. We’re going to make an empty text file called "hello_world.txt”.
 
 
-In cmd, we’ll do that by typing `echo > hello_world.txt` and hitting enter. You’ll be asked to “Supply values for the following parameters…” - just hit enter again to leave them blank. Now type “hello_world.txt” and the empty text file you just created will open up in Notepad. (In Terminal, this process is a little easier. Just type `touch hello_world.txt`)
+In cmd, we’ll do that by typing `echo > hello_world.txt` and hitting enter. Now type “hello_world.txt” and the empty text file you just created will open up in Notepad. (In Terminal, this process is a little easier. Just type `touch hello_world.txt`)
 
 
-Let’s delete that file now. Type `remove-item hello_world.txt` (`rm hello_world.txt` on Mac) and hit enter. Again, feel free to confirm it’s gone with `dir` or `start .`
+Let’s delete that file now. Type `del /f hello_world.txt` (`rm hello_world.txt` on Mac) and hit enter. Again, feel free to confirm it’s gone with `dir` or `start .`
 
 
-Okay, time to retrace our steps and return to where we started. Our current working directory is `C:\Users\YOUR NAME HERE\new_folder>` `[INSERT MAC PATH HERE]`. To return to our user folder type `cd ..`. The `..` refers to the parent directory, i.e. the directory above that encloses the directory we are currently inside. 
+Okay, time to retrace our steps and return to where we started. Our current working directory is `C:\Users\YOUR NAME HERE\new_folder>` or `new_folder`. To return to our user folder type `cd ..`. The `..` refers to the parent directory, i.e. the directory above that encloses the directory we are currently inside. 
 
 
 Next, let’s delete the folder we made earlier. (BE CAREFUL here - you don’t want to accidentally delete the wrong folder! 😉)  Type `rmdir new_folder` and that’s that taken care of.
@@ -52,20 +51,21 @@ And that’s all the basics of navigating file structures in the command line, a
     {
         header: "Lesson 2: Installing VS Code and Git CLI",
         content: '
-        Visual Studio Code, otherwise known as VSCode or VSC is a text editor highly developed and optimised for writing code. It supports hundreds of programming languages and thousands of extensions to improve your efficiency.
-
-To get set up, type Visual Studio Code into your search browser and click the first link or go to https://code.visualstudio.com/.  
+        Visual Studio Code, otherwise known as VSCode or VSC is a text editor highly developed and optimised for writing code. It supports hundreds of programming languages and thousands of extensions to improve your efficiency.  
 
 
-[screenshot]  
+        VSCode is great tool to familiarise yourself with; it is used by a huge number of professionals every day. In fact, this site was developed using VSCode as a text editor!
 
 
-You should see a screen something like this. It automatically detects the best version for you, but if for some reason it does not, simply click the down arrow to the right of the download button. This will display other versions for you to download. 
+To get set up, type "Visual Studio Code" into your search browser or go to https://code.visualstudio.com/.
+
+
+The website should automatically detect the correct version for your operating system, but if for some reason it does not, simply click the down arrow to the right of the download button. This will display other versions for you to download. 
 
 
 ###### Windows:  
 
-Once downloading has finished you should have a file named something similar to VSCodeUserSetup-{version}.exe. Agree to the license terms and select the options you would like. From there, you can launch VSC!
+Once downloading has finished you should have a file named something similar to "VSCodeUserSetup-{version}.exe." Agree to the license terms and select the options you would like. From there, you can launch VSC!
 
 
 ###### Mac:  
@@ -75,10 +75,7 @@ Downloading this on Mac should give you a .zip file. Double click it the same as
 
 #### Git
 
-Git command line (cli) comes preinstalled on most Mac and Linux devices, to check if it is installed, type `git version` into your “Terminal” if on Mac, or “Command Prompt or Git Bash” on Windows. If it is not installed simply search for “Git” on your search browser and find the downloads page, or enter https://git-scm.com/downloads into the URL. 
-
-
-[screenshot 2]
+Git command line (cli) comes preinstalled on most Mac and Linux devices, to check if it is installed, type `git version` into your “Terminal” if on Mac, or “Command Prompt or Git Bash” on Windows. If it is not installed simply search for “Git” on your search browser and find the downloads page, or enter https://git-scm.com/downloads into the URL. It is recommended that you install Git Bash and Git Credential Manager to make authenticating Git and Github easier.
 
 
 From the official Git website, click the download for your respective operating system. Follow the same setup steps as VSCode from there.
@@ -97,31 +94,25 @@ From the official Git website, click the download for your respective operating 
 
 This section looks at setting up your GitHub account and getting it to talk to Git.
 
-###### Downloading GitHub:
+###### Signing up for GitHub:
 
 We will begin by visiting GitHub’s home page at: https://github.com
 
 
-[screenshot]  
-
-On this page below “Where the world builds software” there is an option to add your Email address. In here put in your Email and continue to click on the sign up to GitHub button.
-
-This will then redirect you to the Sign-up page. On this page, your Email address should already be filled in (make sure you haven’t already registered with this Email before). You must then: create a password, create a unique username, select whether you would like to receive product updates and announcements via Email (Y-yes/N-no), and finally complete a puzzle to verify you are human.
+Click on the link to sign-up. On this page, you can enter your email address. You must then: create a password, create a unique username, select whether you would like to receive product updates and announcements via Email (Y-yes/N-no), and finally complete a puzzle to verify you are human.
 
 
 Congratulations, you should now have a GitHub account and are ready to start some collaborative coding!
      
 #### Getting GitHub to talk to Git:
 
-Now that you have set up your GitHub account you can connect it to Git, which should be installed on your device. If you are using Mac or Linux open Terminal and if you are using Windows open the Command Prompt. From here we can check Git is correctly installed by typing: git --version. This should give you the current version of Git installed on your device, if this is not the case you should go back to the previous section and make sure Git is installed.  
+Now that you have set up your GitHub account you can connect it to Git, which should be installed on your device. If you are using Mac or Linux device open Terminal and if you are using Windows open the Command Prompt. From here we can check Git is correctly installed by typing: `git --version`. This should give you the current version of Git installed on your device, if this is not the case you should go back to the previous section and make sure Git, Git Bash and GCM are installed.  
 
+To begin, we need to set some global variables for our local Git installation. Open up Git Bash and type the following:
 
-[screenshot]
-
-
-We can now try getting Git to talk to GitHub. On the command line, we are now going to type: 
 
 ```
+bash
 
 git config --global user.email "hello@example.com"
 
@@ -131,13 +122,47 @@ git config --global user.email "hello@example.com"
 Where the Email address within the quotation marks is replaced by the email address you used to set up your GitHub account.
 
 
-[screenshot]
 
 
-Git will now use this mail address to link your future commits with your GitHub account and you have successfully got GitHub to talk to Git. From here we can add some more commands, git config --global user.name "Your Name". This will set the author name of all your commits to be published under the name input in “Your Name”. 
+Git will now use this mail address to link your future commits with your GitHub account. From here we can use another command:
+
+```
+bash
+
+git config --global user.name "Your Name".  
+
+```
+
+This will set the author name of all your commits to be published under the name input in “Your Name”.
 
 
-[I THINK WE STILL NEED TO ADD AUTHORISATION HERE]
+
+We can now try getting Git to talk to GitHub. This is the trickiest part, as there are several ways to go about setting this up, and GitHub have changed authentication methods over time to make this more secure. In this case, we are going to set up communication between Git and GitHub over HTTPS (this is the standard protocol that you use to browse the web) with a *Personal Access Token* or PAT. Why not just use a password? As of August 2021, GitHub decided to remove support for passwords for authentication due to security concerns.
+
+
+If you have installed Git Credential Manager with Git, then setting this up is very simple. When you go to do something that requires authentication, a browser window will open up and guide you through the authentication process. Then GCM will store the credentials for you, and you will never have to think about it again. That wasn''t so bad!  
+
+
+If for whatever reason GCM is not working, you''ll have to manually create a token in GitHub:
+
+1. Log in to GitHub and click on the avatar icon on the top-right of the page to bring up a drop-down menu.
+
+2. Select "Settings"
+
+3. Scroll down the page and click on "Developer Settings", then "personal access tokens".
+
+4. Click on the "generate new token" button
+
+5. Give the token a name and set the expiration to a fairly long setting.
+
+6. Set the scopes for the token. You will certainly want to check the "repo" box.
+
+7. Click "Generate token" and copy the token displayed. Make sure that you save it somewhere as you will need it and cannot view it again on GitHub.
+
+8. From the command line, when you are pushing or pulling to GitHub you will be prompted for a username and password. The token **is** the password, not the one that you used to sign up for GitHub. Pushing and pulling will be covered in the next lesson.
+
+
+If you are still having issues with authenticating to GitHub, welcome to devopment! You may find some helpful guidance in the [GitHub docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github).  
 
 
 Your local installation of Git should now be able to communicate with Github. This means that you are now ready to start pushing code directly to github from the command line.
@@ -148,7 +173,7 @@ Your local installation of Git should now be able to communicate with Github. Th
         header: "Lesson 4: Pushing to Github and Adding a Readme",
         content: '
         
-This command is used to push the commit of changes made on your local machine to a remote repository such as GitHub.
+The `push` command is used to push the commit of changes made on your local machine to a remote repository such as GitHub.
 
 To start with, let’s create a new repository on GitHub.
 
