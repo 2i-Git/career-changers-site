@@ -172,37 +172,92 @@ Your local installation of Git should now be able to communicate with Github. Th
     {
         header: "Lesson 4: Pushing to Github and Adding a Readme",
         content: '
+
+        When we work with Git on our machines, we: 
         
-The `push` command is used to push the commit of changes made on your local machine to a remote repository such as GitHub.
+        1. *initialise* a repository at the root folder of whatever project we are working on
+        
+        2. When we have made some progress, we make a *commit*. This is like a snapshot on the project as it is. Git has some tools that allow us to go back and forth between commits if we find that we have made a mistake and need to go back.  
+        
+        3. The `git push` command is used to push the commit of changes made on your local machine to a remote repository such as GitHub.
 
-To start with, let’s create a new repository on GitHub.
+
+To start with, let’s create a new repository on GitHub. This is where we will push our local repository to later:
+
+1. Go to GitHub.com and log in.
+
+2. Somewhere on the left hand side of the screen should be a green button which says "new".
+
+3. If you are offered a template, select "no template" and give the repo a name of "hello world".
+
+4. Ensure that all of the checkboxes are unticked, especially "add a README file" and click "Create repository".
+
+5. You should now see a page with several lines that you can copy and paste into the command line to push a local repo up to GitHub. We will come back to this page later.
 
 
-Let’s initialise a git repository to use the git push command and add a readme file. So open up your command line window.
+Now, let’s initialise a local git repository and add a readme file. So open up your command line window.
 
-The command prompt should default to C:\Users\’your_own_name’
+The command prompt should default to C:\Users\’your_own_name’ on a Windows machine.
 
 For demonstration purposes, let’s initialise the git repository here in the default location. But first, we need to create a folder to contain our project. You can do this either by manually creating it through the file explorer or just input this command into the command prompt:
-mkdir git_tutorial
-
-Then you would need to move to the specific folder before we initialise the git repository so we use the command:
-cd git_tutorial
-
-Now that we are in our project folder, we can finally initialise the repository. To do that we use the command:
-git init
-
-Now that we have initialised our repository, we can now get started on creating our readme.md file for our repository. First, open up Visual Studio Code and on the top left click File -> New File.
-The file we want to create is called README.md with the file extension .md standing for Markdown. Because of that, you can create headers with the ‘#’ symbol before the text. For more information regarding Markdown and all the syntax, you could use, check out https://www.markdownguide.org/cheat-sheet/
-So input:
 
 ```
+bash
+
+mkdir git_tutorial
+
+```
+
+
+Then you would need to move to the specific folder before we initialise the git repository so we use the command:
+
+```
+bash
+
+cd git_tutorial
+
+```
+
+
+Now that we are in our project folder, we can finally initialise the repository. To do that we use the command:
+
+```
+bash
+
+git init
+
+```
+
+Now that we have initialised our repository, we can now get started on creating our readme.md file for our repository. To open up VSCode in the current folder you can use the command:
+
+```
+bash
+
+code .
+
+```
+
+If this has not automatically set up when you installed VSCode, you can just open VSCode from the start menu/launchpad like any other app.
+
+1. In VSCode, on the top left click File -> New File.
+
+2. Give the file a name of `README.md` with the file extension .md standing for Markdown. 
+
+3. Open up your README. These files are written in Markdown, which allows you to use symbols to decorate text. For example, you can create headers with the ‘#’ symbol before the text. For more information regarding Markdown and all the syntax, you could use, check out https://www.markdownguide.org/cheat-sheet/.
+
+
+So input:
+
+
+```
+markdown
 
 # Example Header  
 
 this is some content for my readme
 
-```
-code blocks go between triple backticks like this, or between triple tildas (~~~)
+```  
+code blocks go between triple backticks like this, or between triple tildas (~~~)  
 ```
 
 
@@ -218,6 +273,7 @@ Now that we have finished typing in our README.md file, we can now save it. Go t
 We can now do our first commit to our repository. To do that we need to use several commands. First use:
 
 ```
+bash
 
 git add .
 
@@ -225,13 +281,14 @@ git status
 
 ```
 
-Using ‘git add’ will add all the new files ready for the commit, and the `.` is shorthand for "all". ‘git status’ will show a list of all the files staged to the first commit.
+Using ‘git add’ will add all the new files ready for the commit, and the `.` is shorthand for "all". ‘git status’ will show a list of all the files staged to the first commit. You should see your README in this list highlighted in green.
 
 #### Committing
 
 Now for our first commit, we need to use:  
 
 ```   
+bash
 
 git commit -m "your message"
 
@@ -241,33 +298,34 @@ The ‘-m’ flag is used for a message to set the commits where the full descri
 Remember to put your message in quotations otherwise the command won’t go through. For example:
 
 ```
+bash
 
 git commit -m “First Commit”
 
 ```
 
-Now we need to link this local repository to the repository created in GitHub. First copy the URL of the repository created on GitHub.  
-
-
-You should see it on the first page opened when you first created the GitHub repository. Or just copy it from the address bar from your browser.
-We need to now use two final commands to push our local files to the GitHub repository.  
+Now we need to link this local repository to the repository created in GitHub. Return to the page on GitHub that you reached earlier. Beneath "...or push an existing repository from the command line" you should see:
 
 
 ```
+bash
 
-git remote add origin ‘your_url_name’
-
+git remote add origin https://github.com/youraccount/hello-world.git
+git branch -M main
 git push -u origin main
 
 ```
 
-The first command adds the remote repository based on the URL name given and ‘origin’ is used as the remote name. A git remote is just a git repository that is hosted online. We have to give git a remote name so that it knows where to push to.
+The first command adds the remote repository based on the URL name given and ‘origin’ is used as the remote name. A git remote is just a git repository that is hosted online. We have to give git a remote name so that it knows where to push to. The second command is saying that the main branch is defined as "main", which is the default anyway. 
 
 
-The second command “git push -u origin main” pushes the content to the remote repository. ‘Origin’ is the remote repository name, ‘-u’ flag is upstream which is the equivalent to ‘-set-upstream’ and the ‘main’ is the branch. after this point, if you are just pushing commits to the main branch, you can just shorten this to:
+The third command “git push -u origin main” pushes the content to the remote repository. ‘Origin’ is the remote repository name, ‘-u’ flag is upstream which is the equivalent to ‘-set-upstream’ and the ‘main’ is the branch. 
+
+After this point, if you are just pushing commits to the main branch, you can just shorten this to:
 
 
 ```
+bash
 
 git push
 
