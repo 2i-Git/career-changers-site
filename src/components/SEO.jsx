@@ -67,6 +67,10 @@ const SEO = ({ lang, description, meta, keywords, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `theme-color`,
+          content: `#1553A8`
+        },
       ]
         .concat(
           keywords.length > 0
