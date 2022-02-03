@@ -18,12 +18,15 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
   const handleScrollToTop = useSmoothScrollTo(0);
 
   const [expanded, setExpanded] = React.useState(false);
+
   const toggleMenu = React.useCallback(() => {
     setExpanded(!expanded);
   }, [expanded]);
+
   const closeMenu = React.useCallback(() => {
     setExpanded(false);
   }, []);
+
   const handleBrandClick = React.useCallback(() => {
     closeMenu();
     handleScrollToTop();
@@ -41,7 +44,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
   return (
     <Navbar
       className={clsx("navbar-root", { "navbar-shrink": shrink })}
-      expand="lg"
+      expand="xl"
       fixed="top"
       expanded={expanded}
     >
