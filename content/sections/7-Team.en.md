@@ -9,7 +9,7 @@ teamMember: [
     header: "Carla Chiodi",
     subheader: "Test Automation Engineer",
     social: {
-      linkedin: "#"
+      linkedin: "in/chiodicg/"
     },
     story: "Changing my career was the right choice to pursue my passion for learning and problem-solving, with the bonus of career progression and professional development."
   },
@@ -18,7 +18,7 @@ teamMember: [
     header: "Craig McLeod",
     subheader: "Test Automation Engineer",
     social: {
-      linkedin: "#"
+      linkedin: "in/craig-r-mcleod/"
     },
     story:  "With a background in life sciences degree and food and beverage QC, I thought that my path was set, but I picked up coding as a hobby and something was sparked in me. I discovered that a career change was not only possible but that this new industry brought together so many things I enjoyed: problem solving, designing, creating and having real pride in tangible efforts."
   },
