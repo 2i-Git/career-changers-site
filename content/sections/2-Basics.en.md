@@ -422,7 +422,7 @@ function takeCardPayment(cardNumber, price, shoppingCart){
 Part of the point of a function is abstraction, meaning that when we call a function, we don’t need to know the inner workings of it, just what goes in and comes out. A short, descriptive name helps with this. If you are struggling to name your function, it may be performing too many tasks. In the example above, we can’t see how the helper functions perform their tasks, but we can take a good guess at the results from the names.
 
 
-Check your code against the following [cheatsheet](https://replit.com/@LewisSaunders1/lesson3#index.js)  
+Check your code against the following [cheatsheet](https://replit.com/@LewisSaunders1/lesson4#index.js)  
 
         '
     },
