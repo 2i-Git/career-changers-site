@@ -28,9 +28,6 @@ The best way to learn to code is by doing, so for best results you will want to 
 If you follow along with the lessons you should end with a repl just like these ones. These are just provided for reference.
 
 
-[lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)  
-
-
 [lesson 3](https://replit.com/@LewisSaunders1/lesson3#index.js)  
 
 
@@ -137,6 +134,7 @@ If you follow along with the lessons you should end with a repl just like these 
 
 
         TIP: In javascript, you can also declare a variable using 'var'. This is an older style that still pops up now and then in code, but is generally discouraged as it can be accessed anywhere in the code ('globally scoped'), as opposed to 'let' which can only be referred to from the block of code in which it is declared ('block scoped'). [This article](https://www.tutorialspoint.com/es6/es6_variables.htm) covers scope in more detail and with examples.
+        [lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)  
         "
     },
     {
