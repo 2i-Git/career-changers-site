@@ -134,8 +134,8 @@ If you follow along with the lessons you should end with a repl just like these 
 
 
         TIP: In javascript, you can also declare a variable using 'var'. This is an older style that still pops up now and then in code, but is generally discouraged as it can be accessed anywhere in the code ('globally scoped'), as opposed to 'let' which can only be referred to from the block of code in which it is declared ('block scoped'). [This article](https://www.tutorialspoint.com/es6/es6_variables.htm) covers scope in more detail and with examples.
+        [lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)  
         "
-    [lesson 2](https://replit.com/@LewisSaunders1/lesson2#index.js)  
     },
     {
         header: "Lesson 3: Data types, operators, and string concatenation",
