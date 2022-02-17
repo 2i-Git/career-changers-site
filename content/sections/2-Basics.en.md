@@ -23,21 +23,6 @@ The other advantage is that you will not have to use the command line to install
 The best way to learn to code is by doing, so for best results you will want to put this site side-by-side with a blank Node repl and follow along with the lessons. If you find that you’re curious about something, follow that curiosity! Change the code, break it and see if you can fix it again. That is a great way to develop your understanding. 
 
 
-#### links to lesson repls
-
-If you follow along with the lessons you should end with a repl just like these ones. These are just provided for reference.
-
-
-[lesson 3](https://replit.com/@LewisSaunders1/lesson3#index.js)  
-
-
-[lesson 4](https://replit.com/@LewisSaunders1/lesson4#index.js)  
-
-
-[lesson 5](https://replit.com/@LewisSaunders1/lesson5#index.js)  
-
-
-[lesson 6](https://replit.com/@LewisSaunders1/lesson6#index.js) "
     },
     {
         header: "Lesson 2: Variables, print statements and comments",
@@ -328,6 +313,10 @@ console.log(firstName + " is a name with "+ firstName.length + " letters.")
 
 TIP: The length property can also be used with data collections such as arrays and objects. More about those in another lesson
 
+
+Check your code against the following [cheatsheet](https://replit.com/@LewisSaunders1/lesson3#index.js)  
+
+
 '
     },
     {
@@ -431,6 +420,9 @@ function takeCardPayment(cardNumber, price, shoppingCart){
 
 
 Part of the point of a function is abstraction, meaning that when we call a function, we don’t need to know the inner workings of it, just what goes in and comes out. A short, descriptive name helps with this. If you are struggling to name your function, it may be performing too many tasks. In the example above, we can’t see how the helper functions perform their tasks, but we can take a good guess at the results from the names.
+
+
+Check your code against the following [cheatsheet](https://replit.com/@LewisSaunders1/lesson3#index.js)  
 
         '
     },
@@ -681,6 +673,9 @@ console.log(zoo["animals"][2]["species"])
 
 
 For an in depth guide to working with Objects, the [MDN guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) is an excellent resource 
+
+
+Check your code against the following [cheatsheet](https://replit.com/@LewisSaunders1/lesson5#index.js)  
 
         '
     },
@@ -1008,6 +1003,9 @@ undefined
 NaN (not a number, a special number type)
 
 ```
+
+Check your code against the following [cheatsheet](https://replit.com/@LewisSaunders1/lesson6#index.js)  
+
 '
     },
     { header: "Lesson 7: Guided Coding Challenge",
