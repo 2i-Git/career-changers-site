@@ -21,7 +21,7 @@ The other advantage is that you will not have to use the command line to install
 
 
 The best way to learn to code is by doing, so for best results you will want to put this site side-by-side with a blank Node repl and follow along with the lessons. If you find that you’re curious about something, follow that curiosity! Change the code, break it and see if you can fix it again. That is a great way to develop your understanding. 
-
+"
 
     },
     {
