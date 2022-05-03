@@ -1,6 +1,54 @@
-<h1 align="center">
-  Gatsyby startbootstrap-agency
-</h1>
+# Career changers App
+
+## Getting started
+Once you have cloned the repo to your machine you will need to install dependencies using npm and yarn:
+```
+npm install -g gatsby-cli
+npm install --global yarn
+npm install
+yarn add
+```
+
+then try running the app locally using:
+```
+gatsby develop
+```
+the dev server should start running at **localhost:8000**.
+
+You don't need to create production builds, when your code is pulled into the main branch of the repo, Netlify will automatically kick off a build.
+
+***
+
+## High level overview of the app
+This app is built on a template which uses:
+* Gatsby - CMS
+* React - to display components
+* Typescript - with React
+* GraphQL - As a content database and to pull data into pages
+* i18n - to serve content in multiple languages. I've stripped out as much of this as I can since we only need English
+
+If we were running a high-performance blog, this would be amazing. Since we're not, it's a little bit overkill for our needs.
+
+To give a rough overview of where things can be found:
+
+### content
+this is where all of the lesson text is found as well as some of the images. Everything is written in markup with frontmatter. The content is pulled into the frontend using GraphQL and then a React library converts the markup to actual formatting.
+
+In the code examples, indenting with regular spaces was not surviving the journey through the database so I had to use *special* non-breaking spaces. If you need to indent something, you can just copy and paste the non-breaking spaces that are already there.
+
+Some of the sections have names that don't really match them, this is a hangover from how they were named in the template. Please don't change the names as the file names are used to dynamically lay out the page.
+
+### src
+This is where all of the "code" aspects are found
+
+### src/templates/top-index.jsx
+This file contains the large GraphQL query that pulls down content. It also sets how the page is set out by dynamically importing sections. Some of the sections such as the cookie banner and SEO are set out statically here so if you need to work on them, this is where you do it.
+
+### src/components
+This has all of the React components and the matching SCSS (just fancy CSS) files to style them. A lot of the React libraries that you may need to work on are also implemented in these.
+
+
+***
 
 gatsby version of startbootstrap-agency with i18n supported.
 
