@@ -5,8 +5,9 @@ Once you have cloned the repo to your machine you will need to install dependenc
 ```
 npm install -g gatsby-cli
 npm install --global yarn
+npm install node-sass@7.0.1
 npm install
-yarn add
+yarn install
 ```
 
 then try running the app locally using:
