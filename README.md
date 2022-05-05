@@ -5,11 +5,12 @@ Once you have cloned the repo to your machine you will need to install dependenc
 ```
 npm install -g gatsby-cli
 npm install --global yarn
+npm install node-sass@7.0.1 -- if you are on node version 17+
 npm install
-yarn add
+yarn install
 ```
 
-then try running the app locally using:
+You'll likely get some error messages but don't worry about them too much for now. Try running the app locally using:
 ```
 gatsby develop
 ```
@@ -47,6 +48,40 @@ This file contains the large GraphQL query that pulls down content. It also sets
 ### src/components
 This has all of the React components and the matching SCSS (just fancy CSS) files to style them. A lot of the React libraries that you may need to work on are also implemented in these.
 
+
+***
+
+## Using git to make changes
+
+When making changes to the app, commit them to a new branch. You can switch branches using
+
+```
+git checkout "branch-name"
+```
+
+to create a new branch to work off of, use:
+
+```
+git checkout -b "new-branch-name"
+```
+
+to commit changes:
+```
+git add .
+git commit -m "your message here"
+```
+
+and then push it to the github:
+```
+git push
+```
+
+once the code is on the github repo, you can create a **pull request** from the github website. This starts a review process, and when approved, your code gets pulled into the main branch. Remember to update your local main branch with the newly pulled in code afterwards:
+
+```
+git checkout main
+git pull
+```
 
 ***
 
