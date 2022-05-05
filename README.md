@@ -73,7 +73,7 @@ git commit -m "your message here"
 
 and then push it to the github:
 ```
-git push branch-name (no double quotes)
+git push
 ```
 
 once the code is on the github repo, you can create a **pull request** from the github website. This starts a review process, and when approved, your code gets pulled into the main branch. Remember to update your local main branch with the newly pulled in code afterwards:
