@@ -1,6 +1,8 @@
 # Career changers App
 
 ## Getting started
+
+*Powershell can raise errors about "running scripts". use cmd line for the installs instead.*
 Once you have cloned the repo to your machine you will need to install dependencies using npm and yarn:
 ```
 npm install -g gatsby-cli
