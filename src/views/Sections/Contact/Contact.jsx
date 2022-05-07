@@ -11,7 +11,7 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, email } = frontmatter;
+  const { anchor, header, subheader, content, telephone, email } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -32,11 +32,15 @@ const Contact = ({ className, frontmatter }) => {
             fileName="logo-icon-large.png"
             alt="2i logo"
             layout="fixed"
-            width={300}
           />
-
         </Col>
         <Col />
+      </Row>
+      <Row className="justify-content-center">
+        <Col lg={8} className="text-center">
+          <br />
+          <p className="text-dark mb-5">{content}</p>
+        </Col>
       </Row>
       <Row>
         <Col lg={4} className="ml-auto text-center">
