@@ -19,16 +19,15 @@ const Contact = ({ className, frontmatter }) => {
         <Col lg={8} className="text-center">
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
-          <p className="text-dark mb-5">{subheader}</p>
+          <p className="text-dark mb-4" id="about-2i">{subheader}</p>
         </Col>
       </Row>
-      <Row>
+      <Row className="d-flex aligns-items-center">
         <Col />
         <Col>
-          {/* <img id="biglogo" src="content\assets\images\logos\logo-icon-large.png" alt="2i logo" /> */}
           <Image
             id="contactlogo"
-            className="md-auto"
+            className="md-auto align-middle"
             fileName="logo-icon-large.png"
             alt="2i logo"
             layout="fixed"
@@ -38,8 +37,7 @@ const Contact = ({ className, frontmatter }) => {
       </Row>
       <Row className="justify-content-center">
         <Col lg={8} className="text-center">
-          <br />
-          <p className="text-dark mb-5">{content}</p>
+          <p id="about-contact"  className="text-dark mb-5">{content}</p>
         </Col>
       </Row>
       <Row>

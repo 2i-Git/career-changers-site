@@ -3,16 +3,16 @@
 
 /* Global styling for this template */
 body {
-  overflow-x: hidden;
-  @include body-font;
+    overflow-x: hidden;
+    @include body-font;
 }
 
 p {
-  line-height: 1.85;
+    line-height: 1.85;
 }
 
 .text-primary {
-  color: $primary !important;
+    color: $primary !important;
 }
 
 h1,
@@ -21,74 +21,81 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  @include heading-font;
+    font-weight: 700;
+    @include heading-font;
 }
 
 .cursor-pointer {
-  &:hover {
-    cursor: pointer;
-  }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
-  text-shadow: none;
+    background: $primary;
+    text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
-  text-shadow: none;
+    background: $primary;
+    text-shadow: none;
 }
 
 img::selection {
-  background: transparent;
+    background: transparent;
 }
 
 img::-moz-selection {
-  background: transparent;
+    background: transparent;
 }
 
 /* Components */
 // Button Styles
 .btn {
-  @include heading-font;
-  font-weight: 700;
+    @include heading-font;
+    font-weight: 700;
 }
 
 .btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+    font-size: 18px;
+    padding: 20px 40px;
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
-    color: white;
-  }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem $lightblu !important;
-  }
+    background-color: $primary;
+    border-color: $primary;
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: darken($primary, 7.5%) !important;
+        border-color: darken($primary, 7.5%) !important;
+        color: white;
+    }
+    &:active,
+    &:focus {
+        box-shadow: 0 0 0 0.2rem $lightblu !important;
+    }
 }
 
-// #contactlogo {
-//   max-width: 200px;
-//   height:auto;
-// }
-
-@media screen and (max-width: 1000px) {
-  #contactlogo{
+#contactlogo {
     place-self: center;
-  }
+    margin: 0 auto;
+    height: auto;
+}
+
+@media screen and(max-width: 2000px) {
+    #contactlogo {
+        max-width: 90%;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    #contactlogo {
+        max-width: 90%;
+    }
 }
 
 // code {
-//   display: block;
+// display: block;
 // }
