@@ -7,20 +7,20 @@ lessons: [
         header: "Extras",
         content: '
         
-So far, we have really focussed on the bare minimum that you need in order to solve code challenges. In this optional chapter, we are going to look at some slightly more advanced styles of writing JavaScript. Being familiar with these techniques is great because:
+So far, we have focussed on the bare minimum that you need to solve code challenges. In this optional chapter, we are going to look at some slightly more advanced styles of writing JavaScript. Being familiar with these techniques is great because:
 
-1.	Your code challenges will look really slick
+1.  Your code challenges will look really slick
 
-2.	These techniques will appear in lots of code examples. If you understand other people’s code, then you can ~steal~ copy bits that are useful to you!
+2.  These techniques will appear in lots of code examples. If you understand other people’s code, then you can ~steal~ copy bits that are useful to you!
 
 
 ## Arrow functions
 
-If you learn one thing from this chapter, make it this one. Arrow functions are an shorter way of writing JavaScript functions, which is very useful when we start using functions in callbacks (a callback is essentially passing a function into a function as an argument).
+If you learn one thing from this chapter, make it this one. Arrow functions are a shorter way of writing JavaScript functions, which is very useful when we start using functions in callbacks (a callback is essentially passing a function into a function as an argument).
 
 
 
-Arrow functions essentially strip out some of the keywords associated with functions. Let’s step through from traditional function to completely simplified arrow function:
+Arrow functions essentially strip out some of the keywords associated with functions. Let’s step through from a traditional function to a completely simplified arrow function:
 
 
 ```
@@ -88,7 +88,7 @@ console.log(greet("squidward"))
 
 > Prints “hello my name is squidward”
 
-You can see how compact and easy to read a function can get using arrow functions. Be aware that they are not suitable for all situations, so you may need to rewrite the function as a traditional function every now and then.
+You can see how compact and easy to read a function can get using arrow functions. Be aware that they are not suitable for all situations, so you may need to rewrite the function as a traditional function now and then.
 
 
 For more information on arrow functions, the [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) is always an excellent resource.
@@ -96,10 +96,10 @@ For more information on arrow functions, the [Mozilla documentation](https://dev
 
 ### Class Methods & Callbacks
 
-JavaScript is intended to be a really easy language to use, and a part of that user-friendly design is providing built-in functions called *methods*. Pretty much every class (Strings are a class, arrays are a class, you can define custom classes etc.) have build-in methods that you can use without having to define a function to use. If you are looking at code challenge solutions online, you’re very likely to come across **array methods**. Again, [Mozilla is your friend](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), they maintain a list of all of the array methods available to you, with examples. Some, like pop(), push() and shift() should look familiar.
+JavaScript is intended to be a really easy language to use, and a part of that user-friendly design is providing built-in functions called *methods*. Pretty much every class (Strings are a class, arrays are a class, you can define custom classes etc.) have built-in methods that you can use without having to define a function to use. If you are looking at code challenge solutions online, you’re very likely to come across **array methods**. Again, [Mozilla is your friend](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), they maintain a list of all of the array methods available to you, with examples. Some, like pop(), push() and shift() should look familiar.
 
 
-In this lesson, we will cover a few of the very useful methods which take an arrow function as an argument (this is known as a *callback*). These will absolutely supercharge your code challenging!
+In this lesson, we will cover a few of the very useful methods which take an arrow function as an argument (this is known as a *callback*). These will supercharge your code challenge!
 
 
 ```

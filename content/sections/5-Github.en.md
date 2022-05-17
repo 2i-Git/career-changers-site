@@ -9,25 +9,28 @@ lessons: [
         When most users interact with their computer, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
 
 
-However, there is a more efficient and powerful way to interact with your computer and it’s one that’s essential for any programmer, software developer or test engineer such as yourself. That way is via the **command line** or **CLI**, a text based interface that allows the user to do everything a GUI does as well as many more advanced operations.  
+When most users interact with their computers, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
 
 
-On Windows machines the default command line interface is called **Command Prompt**, or **cmd.exe**. On MacOS, it’s **Terminal**. Both operate almost identically and for the most part respond to the same commands.  
+However, there is a more efficient and powerful way to interact with your computer and it’s essential for any programmer, software developer or test engineer such as yourself. That way is via the **command line** or **CLI**, a text-based interface that allows the user to do everything a GUI does as well as many more advanced operations.  
 
 
-Let’s walk through how to do some everyday operations using the command line. First, open cmd (type “cmd” into the Windows search bar) or Terminal (search “Terminal” in finder).
+On Windows machines, the default command-line interface is called **Command Prompt**, or **cmd.exe**. On macOS, it’s **Terminal**. Both operate almost identically and for the most part, respond to the same commands.  
 
 
-If you’re using Windows, you’ll see this: `C:\Users\YOUR NAME HERE>`. On Mac, you may see `~`, which is just a shorthand for the home directory, or you may see the name of a folder. No doubt you’ve seen something like this before when saving a file or installing a piece of software. This is a *file path*, effectively an address to a particular location in your computer. In this case, it’s the file path of your current working directory, the place you’ll always start from when you open your command line interface. As you navigate into different directories, you’ll see this current working directory update to reflect where you are now. Let’s see that in action.
+Let’s walk through how to do some everyday operations using the command line. First, open cmd (type “cmd” into the Windows search bar) or Terminal (search “Terminal” in finder or Spotlight).
 
 
-First type `dir` (`ls` on Mac) and press enter. This command will list all of the folders inside your current working directory. Next type `start .` (`open .`) and hit enter. A window will open showing you the same location via the GUI. Compare the folders names in the new window to the list of directory names in cmd and you’ll see they’re all the same. (N.b. the `.` in `start .` is shorthand for your current working directory).  
+If you’re using Windows, you’ll see this: `C:\Users\YOUR PC NAME HERE>`. On Mac, you may see `~`, which is just a shorthand for the home directory, or you may see the name of a folder. No doubt you’ve seen something like this before when saving a file or installing a piece of software. This is a *file path*, effectively an address to a particular location on your computer. In this case, it’s the file path of your current working directory, the place you’ll always start from when you open your command-line interface. As you navigate into different directories, you’ll see this current working directory update to reflect where you are now. Let’s see that in action.
+
+
+First type `dir` (`ls` on Mac) and press enter. This command will list all of the folders inside your current working directory. Next type `start .` (`open .`) and hit enter. A window will open showing you the same location via the GUI. Compare the folder names in the new window to the list of directory names in cmd and you’ll see they’re all the same. (N.b. the `.` in `start .` is shorthand for your current working directory).  
 
 
 Next, let’s make a new folder using the command `mkdir`. Type `mkdir new_folder` and then enter. Now, using either the `dir` (`ls`) command or `start .` (`open .`), check to see that folder has been created. 
 
 
-Nice - we’ve made a new folder, so let’s get inside it. To change directories we use the command `cd`. Type `cd new_folder` then enter. You’ll see that the current working directory has changed, and now reads `C:\Users\YOUR NAME HERE\new_folder` or `new_folder` on MacOS.
+Nice - we’ve made a new folder, so let’s get inside it. To change directories we use the command `cd`. Type `cd new_folder` then enter. You’ll see that the current working directory has changed, and now reads `C:\Users\YOUR PC NAME HERE\new_folder` or `new_folder` on MacOS.
 
 Next, let’s make a file. We’re going to make an empty text file called "hello_world.txt”.
 
@@ -38,7 +41,7 @@ In cmd, we’ll do that by typing `echo > hello_world.txt` and hitting enter. No
 Let’s delete that file now. Type `del /f hello_world.txt` (`rm hello_world.txt` on Mac) and hit enter. Again, feel free to confirm it’s gone with `dir` or `start .`
 
 
-Okay, time to retrace our steps and return to where we started. Our current working directory is `C:\Users\YOUR NAME HERE\new_folder>` or `new_folder`. To return to our user folder type `cd ..`. The `..` refers to the parent directory, i.e. the directory above that encloses the directory we are currently inside. 
+Okay, time to retrace our steps and return to where we started. Our current working directory is `C:\Users\YOUR PC NAME HERE\new_folder>` or `new_folder`. To return to our user folder type `cd ..`. The `..` refers to the parent directory, i.e. the directory above that encloses the directory we are currently inside. 
 
 
 Next, let’s delete the folder we made earlier. (BE CAREFUL here - you don’t want to accidentally delete the wrong folder! 😉)  Type `rmdir new_folder` and that’s that taken care of.
@@ -89,7 +92,7 @@ From the official Git website, click the download for your respective operating 
 
 * Git is a version control software (VCS) which is used to track changes to code from the command line. Because it uses *branching* It allows any number of developers to download a piece of code, work on it and contribute changes without breaking the original. Because all of your changes are tracked by Git, it is very hard to break your code, as long as you keep committing! Git is fully open-source.  
 
-* Github is an code hosting platform that uses Git as the base, and then adds lots of interesting features on top. GitHub lets you *push* your Git repositories to the web, where others can download it and collaborate. It also allows you to share and display your work as a developer, which is what we are looking at in this chapter! Many developers use GitHub as a showcase of their coolest projects. Github is owned by Microsoft.
+* Github is a code hosting platform that uses Git as the base, and then adds lots of interesting features on top. GitHub lets you *push* your Git repositories to the web, where others can download them and collaborate. It also allows you to share and display your work as a developer, which is what we are looking at in this chapter! Many developers use GitHub as a showcase of their coolest projects. Github is owned by Microsoft.
 
 
 This section looks at setting up your GitHub account and getting it to talk to Git.
@@ -137,7 +140,7 @@ This will set the author name of all your commits to be published under the name
 
 
 
-We can now try getting Git to talk to GitHub. This is the trickiest part, as there are several ways to go about setting this up, and GitHub have changed authentication methods over time to make this more secure. In this case, we are going to set up communication between Git and GitHub over HTTPS (this is the standard protocol that you use to browse the web) with a *Personal Access Token* or PAT. Why not just use a password? As of August 2021, GitHub decided to remove support for passwords for authentication due to security concerns.
+We can now try getting Git to talk to GitHub. This is the trickiest part, as there are several ways to go about setting this up, and GitHub has changed authentication methods overtime to make this more secure. In this case, we are going to set up communication between Git and GitHub over HTTPS (this is the standard protocol that you use to browse the web) with a *Personal Access Token* or PAT. Why not just use a password? As of August 2021, GitHub decided to remove support for passwords for authentication due to security concerns.
 
 
 If you have installed Git Credential Manager with Git, then setting this up is very simple. When you go to do something that requires authentication, a browser window will open up and guide you through the authentication process. Then GCM will store the credentials for you, and you will never have to think about it again. That wasn''t so bad!  
@@ -162,10 +165,10 @@ If for whatever reason GCM is not working, you''ll have to manually create a tok
 8. From the command line, when you are pushing or pulling to GitHub you will be prompted for a username and password. The token **is** the password, not the one that you used to sign up for GitHub. Pushing and pulling will be covered in the next lesson.
 
 
-If you are still having issues with authenticating to GitHub, welcome to devopment! You may find some helpful guidance in the [GitHub docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github).  
+If you are still having issues with authenticating to GitHub, welcome to development! You may find some helpful guidance in the [GitHub docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github).  
 
 
-Your local installation of Git should now be able to communicate with Github. This means that you are now ready to start pushing code directly to github from the command line.
+Your local installation of Git should now be able to communicate with Github. This means that you are now ready to start pushing code directly to GitHub from the command line.
 
         '
     },
