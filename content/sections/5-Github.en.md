@@ -4,7 +4,7 @@ header: "Publishing Your Work to Github"
 subheader: "Create an online portfolio of your work for employers"
 lessons: [
     {
-        header: "Lesson 1: Command Line Interfaces",
+        header: "Lesson 1: Command-line Interfaces",
         content: '
         When most users interact with their computer, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
 
@@ -170,7 +170,7 @@ Your local installation of Git should now be able to communicate with Github. Th
         '
     },
     {
-        header: "Lesson 4: Pushing to Github and Adding a Readme",
+        header: "Lesson 4: Pushing to Github and adding a Readme",
         content: '
 
         When we work with Git on our machines, we: 

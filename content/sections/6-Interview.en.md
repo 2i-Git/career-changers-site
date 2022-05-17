@@ -5,7 +5,7 @@ subheader: "Tech interviews have some unique challenges, here are some tips to m
 content: "
 Now that you’re eating code challenges for breakfast, you’ll (hopefully) be getting interviews. Every company runs the interview process differently, but in general you can expect:
 
-*	A conversion with two interviewers lasting around thirty minutes to an hour (sometimes longer if you are asked to complete a code challenge during the interview)
+*	A conversation with two interviewers lasting around thirty minutes to an hour (sometimes longer if you are asked to complete a code challenge during the interview)
 
 *	A portion of the interview where you discuss yourself and your background. You’re likely to be asked some generic “competency” questions. These generally relate to things like the role you take in teams, how you learn best, what projects you have worked on etc. At a junior level you can expect this section to take up the bulk of the interview.
 

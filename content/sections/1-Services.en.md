@@ -11,7 +11,7 @@ services: [
   {
     iconName: "LaptopIcon",
     header: "Code is everywhere",
-    content: "Do you want to build the world? Code builds the website that you shop on, it runs the trains that you take to work, it runs restraunts and hospitals and just about everything else. Working in tech means you get to build services that make life better, and to ensure that it works equitably for everybody."
+    content: "Do you want to build the world? Code builds the website that you shop on, it runs the trains that you take to work, it runs restaurants and hospitals and just about everything else. Working in tech means you get to build services that make life better, and to ensure that it works equitably for everybody."
   },
   {
     iconName: "GradCapIcon",

@@ -427,9 +427,9 @@ Check your code against the following [cheatsheet](https://replit.com/@LewisSaun
         '
     },
     {
-        header: "Lesson 5: Arrays, Objects and methods",
+        header: "Lesson 5: Arrays, Objects and Methods",
         content: '
-        We have already looked at some of the basic data types such as numbers and strings, but what if we want to collect several strings or numbers together to do something with them? To do that, we use arrays and Objects. These will often have different names in other languages, but they generally work the same.
+        We have already looked at some of the basic data types such as numbers and strings, but what if we want to collect several strings or numbers together to do something with them? To do that, we use arrays and objects. These will often have different names in other languages, but they generally work the same.
 
 
 ### Arrays:
