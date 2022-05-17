@@ -13,14 +13,14 @@ Throughout this guide, we will be working in JavaScript. Why JavaScript? Because
 Another great reason to learn JavaScript is that it is a comparatively beginner-friendly language: it is reasonably easy to read, has a forgiving syntax, and a lot of the more complex functionality is abstracted into nice, easy to use methods.
 
 
-While JavaScript may look pretty “computerish”, it is in fact much closer to English than anything that a computer can understand. So, we need compilers and translators to facilitate running of our code. Node.js is the runtime most used to achieve this in JavaScript. You can install Node to your device and try writing and running some JavaScript locally, but for the purpose of this guide we recommend using a sandbox like [Replit](replit.com). Replit is a free, in-browser development platform where you can quickly spin up a Node environment and start coding. Sandboxes like replit are great, because they are safe environments where you cannot do any damage to your computer. If the code freezes up, you can always just close the tab and open a new environment.
+While JavaScript may look pretty “computerish”, it is much closer to English than anything that a computer can understand. So, we need compilers and translators to facilitate the running of our code. Node.js is the runtime most used to achieve this in JavaScript. You can install Node to your device and try writing and running some JavaScript locally, but for this guide, we recommend using a sandbox like [Replit](replit.com). Replit is a free, in-browser development platform where you can quickly spin up a Node environment and start coding. Sandboxes like replit are great because they are safe environments where you cannot do any damage to your computer. If the code freezes up, you can always just close the tab and open a new environment.
 
 
-The other advantage is that you will not have to use the command line to install and run software like you would if you were learning on your computer. The command line (usually command prompt on Windows, terminal on MacOS) is a way of controlling your computer using text commands. It is incredibly useful, and we will touch on it in a later chapter but for now save yourself the hassle and use a sandbox. Replit have an excellent getting started video which you can follow [here](https://youtu.be/ZAC0TQEU5gI). Just make sure to pick a Node repl template.
+The other advantage is that you will not have to use the command line to install and run software like you would if you were learning on your computer. The command line (usually command prompt on Windows, terminal on MacOS) is a way of controlling your computer using text commands. It is incredibly useful, and we will touch on it in a later chapter but for now, save yourself the hassle and use a sandbox. Replit has an excellent getting started video which you can follow [here](https://youtu.be/ZAC0TQEU5gI). Just make sure to pick a Node repl template.
 
 
 
-The best way to learn to code is by doing, so for best results you will want to put this site side-by-side with a blank Node repl and follow along with the lessons. If you find that you’re curious about something, follow that curiosity! Change the code, break it and see if you can fix it again. That is a great way to develop your understanding. 
+The best way to learn to code is by doing, so for best results, you will want to put this site side-by-side with a blank Node repl and follow along with the lessons. If you find that you’re curious about something, follow that curiosity! Change the code, break it and see if you can fix it again. That is a great way to develop your understanding.
 "
 
     },
@@ -45,7 +45,7 @@ The best way to learn to code is by doing, so for best results you will want to 
 
     * We declared a variable using “let”, gave it a name of “myName” and gave it a value of “Lewis”.
 
-    * We only need to use “let” when first declaring the variable, after that we can refer to it by its name.
+    * We only need to use “let” when first declaring the variable, after that, we can refer to it by its name.
 
     * We then printed the variable called “myName” to the console. The console log shows the value of myName.
 
@@ -131,11 +131,11 @@ The best way to learn to code is by doing, so for best results you will want to 
 
 ### Data Types:
 
-As you may have already noticed, a variable is not confined to only being text, or a number. Variables can actually hold pretty much any value that you hand them, but we will get to that later. To start with, we will discuss some of JavaScript’s primitive data types:
+As you may have already noticed, a variable is not confined to only being text or a number. Variables can hold pretty much any value that you hand them, but we will get to that later. To start with, we will discuss some of JavaScript’s primitive data types:
 
 #### Number:
 
-Numbers in JavaScript can be either integers (aka whole numbers) or floating-point numbers (aka decimal numbers, for example 4.54). This is not always the case in all languages. Numbers can also be one of special types such as NaN (not a number), or +Infinity or -Infinity.
+Numbers in JavaScript can be either integers (aka whole numbers) or floating-point numbers (aka decimal numbers, for example, 4.54). This is not always the case in all languages. Numbers can also be one of the special types such as NaN (not a number), +Infinity or -Infinity.
 
 
 ```
@@ -351,21 +351,21 @@ console.log(result1)
 
 in this example:
 
-*	We are defining the function using the “function” keyword and giving it a name of “multiplier”
+*   We are defining the function using the “function” keyword and giving it the name of “multiplier”
 
-*	“number1” and “number2” are parameters. We use parameters as placeholders for whatever data we pass into the function when we call it. You can think of parameters as the function’s input.
+*   “number1” and “number2” are parameters. We use parameters as placeholders for whatever data we pass into the function when we call it. You can think of parameters as the function’s input.
 
-*	We return the results of multiplying number1 and number2 together. Return statements are very important, as they pass results back out of the function so that they can be used.
+*   We return the results of multiplying number1 and number2 together. Return statements are very important, as they pass results back out of the function so that they can be used.
 
-*	When we call the function, we are passing in two numbers to be multiplied. The data that you pass in is referred to as an argument.
+*   When we call the function, we are passing in two numbers to be multiplied. The data that you pass in is referred to as an argument.
 
-*	In this case, we are assigning the output of the function to a constant, but we could also just place it inside of the console.log().
+*   In this case, we are assigning the output of the function to a constant, but we could also just place it inside of the console.log().
 
 
 There are a few principles to stick to when writing functions:
 
 
-##### 1.	Functions should be reusable
+##### 1.    Functions should be reusable
 
 
 The biggest advantage of writing a function is that it can be reused over and over, without having to write code for everything that you want to do.
