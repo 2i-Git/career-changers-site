@@ -143,10 +143,10 @@ This will set the author name of all your commits to be published under the name
 We can now try getting Git to talk to GitHub. This is the trickiest part, as there are several ways to go about setting this up, and GitHub has changed authentication methods overtime to make this more secure. In this case, we are going to set up communication between Git and GitHub over HTTPS (this is the standard protocol that you use to browse the web) with a *Personal Access Token* or PAT. Why not just use a password? As of August 2021, GitHub decided to remove support for passwords for authentication due to security concerns.
 
 
-If you have installed Git Credential Manager with Git, then setting this up is very simple. When you go to do something that requires authentication, a browser window will open up and guide you through the authentication process. Then GCM will store the credentials for you, and you will never have to think about it again. That wasn't so bad!  
+If you have installed Git Credential Manager with Git, then setting this up is very simple. When you go to do something that requires authentication, a browser window will open up and guide you through the authentication process. Then GCM will store the credentials for you, and you will never have to think about it again. That wasn''t so bad!  
 
 
-If for whatever reason GCM is not working, you'll have to manually create a token in GitHub:
+If for whatever reason GCM is not working, you''ll have to manually create a token in GitHub:
 
 1. Log in to GitHub and click on the avatar icon on the top-right of the page to bring up a drop-down menu.
 
