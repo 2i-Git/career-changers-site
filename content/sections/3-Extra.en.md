@@ -24,7 +24,7 @@ Arrow functions essentially strip out some of the keywords associated with funct
 
 
 ```
-javascript
+JavaScript
 
 // traditional function
 
@@ -41,7 +41,7 @@ Now, we are going to make this function into an anonymous function. That is, we�
 
 
 ```
-javascript
+JavaScript
 
 // traditional anonymous function
 
@@ -58,7 +58,7 @@ And now into an arrow function.
 
 
 ```
-javascript
+JavaScript
 
 // remove the word function, and replace it with an arrow after the parameter
 
@@ -96,14 +96,14 @@ For more information on arrow functions, the [Mozilla documentation](https://dev
 
 ### Class Methods & Callbacks
 
-JavaScript is intended to be a really easy language to use, and a part of that user-friendly design is providing built-in functions called *methods*. Pretty much every class (Strings are a class, arrays are a class, you can define custom classes etc.) have build-in methods that you can use without having to define a function to use. If you are looking at code challenge solutions online, you’re very likely to come across **array methods**. Again, [Mozilla is your friend](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), they maintain a list of all of the array methods available to you, with examples. Some, like pop(), push() and shift() should look familiar.
+JavaScript is intended to be a really easy language to use, and a part of that user-friendly design is providing built-in functions called *methods*. Pretty much every class (Strings are a class, arrays are a class, you can define custom classes etc.) have built-in methods that you can use without having to define a function to use. If you are looking at code challenge solutions online, you’re very likely to come across **array methods**. Again, [Mozilla is your friend](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), they maintain a list of all of the array methods available to you, with examples. Some, like pop(), push() and shift() should look familiar.
 
 
-In this lesson, we will cover a few of the very useful methods which take an arrow function as an argument (this is known as a *callback*). These will absolutely supercharge your code challenging!
+In this lesson, we will cover a few of the very useful methods which take an arrow function as an argument (this is known as a *callback*). These will absolutely supercharge your coding challenging!
 
 
 ```
-javascript
+JavaScript
 
 // Class Methods & Callbacks
 
@@ -123,7 +123,7 @@ names.forEach(name => console.log("presenting: " + name))
 // a more complex example - drawing lottery numbers
 
 
-// this is a helper function to turn the index into an ordinal (1nd, 2nd etc.)
+// this is a helper function to turn the index into an ordinal (1st, 2nd etc.)
 
 const indexToOrdinal = number => {
 

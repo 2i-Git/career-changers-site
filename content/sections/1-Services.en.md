@@ -11,12 +11,12 @@ services: [
   {
     iconName: "LaptopIcon",
     header: "Code is everywhere",
-    content: "Do you want to build the world? Code builds the website that you shop on, it runs the trains that you take to work, it runs restraunts and hospitals and just about everything else. Working in tech means you get to build services that make life better, and to ensure that it works equitably for everybody."
+    content: "Do you want to build the world? Code builds the website that you shop on, it runs the trains that you take to work, it runs restaurants and hospitals and just about everything else. Working in tech means you get to build services that make life better, and to ensure that it works equitably for everybody."
   },
   {
     iconName: "GradCapIcon",
     header: "Coding is not just for developers",
-    content: "Coding as a skill is highly in demand across just about every industry. Automating administrative tasks, monitoring patient health, charting crop growth; these are all tasks that can be achieved with some curiousity and a little coding knowledge."
+    content: "Coding as a skill is highly in demand across just about every industry. Automating administrative tasks, monitoring patient health, charting crop growth; these are all tasks that can be achieved with some curiosity and a little coding knowledge."
   }
 ]
 ---
