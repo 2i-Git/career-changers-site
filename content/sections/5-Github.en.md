@@ -6,10 +6,10 @@ lessons: [
     {
         header: "Lesson 1: Command Line Interfaces",
         content: '
-        When most users interact with their computer, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
+        When most users interact with their computer, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders, and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
 
 
-When most users interact with their computers, they do so via the graphical user interface (GUI). They click on icons, shortcuts, folders and menus to find their way around the computer and do everything from creating new files to opening a web browser. It’s all very intuitive and easy to understand; if you want to move a file from one folder to another, simply click and drag it to the desired location.
+However, there is a more efficient and powerful way to interact with your computer and it’s one that’s essential for any programmer, software developer or test engineer such as yourself. That way is via the **command line** or **CLI**, a text-based interface that allows the user to do everything a GUI does as well as many more advanced operations.  
 
 
 However, there is a more efficient and powerful way to interact with your computer and it’s essential for any programmer, software developer or test engineer such as yourself. That way is via the **command line** or **CLI**, a text-based interface that allows the user to do everything a GUI does as well as many more advanced operations.  
