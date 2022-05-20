@@ -27,7 +27,7 @@ const PortfolioDetailDialog = ({
         <Modal.Title id="contained-modal-title-vcenter">{header}</Modal.Title>
       </Modal.Header>
       <Modal.Body className="mx-auto">
-        <p className="item-intro text-muted">{subheader}</p>
+        <p className="item-intro text-dark">{subheader}</p>
         <Image
           className="img-fluid d-block"
           fileName={imageFileName}

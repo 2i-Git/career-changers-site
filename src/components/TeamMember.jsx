@@ -28,7 +28,7 @@ const TeamMember = ({
         alt={imageAlt || header || subheader}
       />
       <h4>{header}</h4>
-      <p className="text-muted">{subheader}</p>
+      <p className="text-dark">{subheader}</p>
       <div>
         <span>“</span>
         <span className="font-italic">{story}</span>
