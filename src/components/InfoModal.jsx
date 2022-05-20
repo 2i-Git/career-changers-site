@@ -1,6 +1,10 @@
+/* eslint react/no-children-prop: 0 */
+
 import React from "react";
 import PropTypes from "prop-types";
 import { Row, Modal } from "react-bootstrap";
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 
 const InfoModal = ({ className, closeModal, show, title, text }) => {
 
@@ -11,7 +15,7 @@ const InfoModal = ({ className, closeModal, show, title, text }) => {
             <Modal.Header closeButton>
                 <Modal.Title>{title}</Modal.Title>
             </Modal.Header>
-            <Modal.Body>{text}</Modal.Body>
+            <Modal.Body><ReactMarkdown children={text} remarkPlugins={[gfm]} /></Modal.Body>
         </Modal>
     )
 };
