@@ -24,7 +24,7 @@ Arrow functions essentially strip out some of the keywords associated with funct
 
 
 ```
-JavaScript
+javascript
 
 // traditional function
 
@@ -41,7 +41,7 @@ Now, we are going to make this function into an anonymous function. That is, weâ
 
 
 ```
-JavaScript
+javascript
 
 // traditional anonymous function
 
@@ -58,7 +58,7 @@ And now into an arrow function.
 
 
 ```
-JavaScript
+javascript
 
 // remove the word function, and replace it with an arrow after the parameter
 
@@ -74,7 +74,9 @@ let greet = (name) => {
 let greet = (name) => "hello my name is " + name
 
 
-// if you only have one parameter, you can remove the brackets around that too. if you have zero parameters, or more than one, you will still need the bracket
+// if you only have one parameter, you can remove the brackets around that too.
+
+// if you have zero parameters, or more than one, you will still need the bracket
 
 let greet = name => "hello my name is " + name
 
@@ -99,16 +101,15 @@ For more information on arrow functions, the [Mozilla documentation](https://dev
 JavaScript is intended to be a really easy language to use, and a part of that user-friendly design is providing built-in functions called *methods*. Pretty much every class (Strings are a class, arrays are a class, you can define custom classes etc.) have built-in methods that you can use without having to define a function to use. If you are looking at code challenge solutions online, youâ€™re very likely to come across **array methods**. Again, [Mozilla is your friend](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), they maintain a list of all of the array methods available to you, with examples. Some, like pop(), push() and shift() should look familiar.
 
 
-In this lesson, we will cover a few of the very useful methods which take an arrow function as an argument (this is known as a *callback*). These will absolutely supercharge your coding challenging!
+In this lesson, we will cover a few of the very useful methods which take an arrow function as an argument (this is known as a *callback*). These will absolutely supercharge your coding challenges!
 
 
 ```
-JavaScript
+javascript
 
 // Class Methods & Callbacks
 
 
-const numbers = [23, 54, 99, 125, 43]
 
 const names = ["Will", "Mike", "Lucas", "Dustin", "Max"]
 
@@ -119,8 +120,18 @@ const names = ["Will", "Mike", "Lucas", "Dustin", "Max"]
 
 names.forEach(name => console.log("presenting: " + name))
 
+```
 
-// a more complex example - drawing lottery numbers
+
+Here is a more complex example - drawing lottery numbers
+
+
+```
+javascript
+
+// Drawing lottery Numbers
+
+const numbers = [23, 54, 99, 125, 43]
 
 
 // this is a helper function to turn the index into an ordinal (1st, 2nd etc.)

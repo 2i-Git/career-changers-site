@@ -818,6 +818,11 @@ for (number of numbers) {
 
 }
 
+
+// print out the results
+
+console.log(counter)
+
 ```
 
 ### Comparators:
