@@ -145,18 +145,21 @@ const totalPrice = (group, adultPrice, childPrice) => {
 
    // reduce to turn into one number 
 
-   const totalPrice = tickets.reduce( (runningTotal, current) => {
+   const total = tickets.reduce( (runningTotal, current) => {
 
       return runningTotal + current
 
       })
 
 
-   return totalPrice
+   return total
 
 }
 
-totalPrice(groupAges,adultTix,childTix)
+
+// this line runs the function, wrapped in a console.log so that the result is printed.
+
+console.log(totalPrice(groupAges,adultTix,childTix))
 
 ```
 
