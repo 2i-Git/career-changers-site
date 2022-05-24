@@ -14,19 +14,20 @@
   font-family: "Space Mono", -apple-system, BlinkMacSystemFont, monospace;
 }
 @mixin body-font {
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: Roboto,Arial,Helvetica,sans-serif;
 }
 @mixin heading-font {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Roboto,Arial,Helvetica,sans-serif;
 }
 
 /* Variables */
 // Restated Bootstrap Variables
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
+
+// Changed to 2i blue background colour
+$gray-100: #F0F6FF!default;
+
+
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -38,6 +39,7 @@ $gray-900: #212529 !default;
 $black: #000 !default;
 
 $primary: #1553A8 !default;
+$transprimary: #1553A8F9 !default;
 
 $navy: #38485F !default;
 $transnavy: #38485FF9 !default;
