@@ -12,6 +12,7 @@ npm install
 yarn install
 ```
 
+You may need to install/uninstall sass depending on what version of node you are running. see [this](https://www.npmjs.com/package/node-sass) for more details about what version of node-sass to install.
 You'll likely get some error messages but don't worry about them too much for now. Try running the app locally using:
 ```
 gatsby develop
