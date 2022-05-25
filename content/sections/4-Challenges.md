@@ -6,7 +6,7 @@ lessons: [
     {
         header: "Pseudocode: like code but not",
         content: '
-        As you start to encounter more and more complex code challenges, you will struggle to visualise a complete solution in your head.
+        As you start to encounter more and more complex coding challenges, you will struggle to visualise a complete solution in your head.
         The best way to approach this is to put the problem onto the page, break the problem down into steps and then work on them one at a time.  
 
 
@@ -17,7 +17,7 @@ Let’s take an example problem of building a medicine dosage calculator. Given 
 
 
 ```
-javascript
+JavaScript
 
 // step 1: Write out in plain English (optional)
 
@@ -71,7 +71,7 @@ In sandbox environments like Replit we rarely have access to fully featured debu
 The below code contains some methods and syntaxes that you have not seen before, so don’t worry if you don’t completely understand them.
 
 
-    **Challenge: there is a screening of a film at a cinema, and for each adult (>15) in a group, a child (<=5) gets in for free. Children cannot attend without at least one adult per group. Adult tickets are £10, children are £5. Write a function that takes in an array of ages for a group and returns a total price for tickets.**
+    **Challenge: there is a screening of a film at a cinema, and for each adult (age >15) in a group, a child (age <=5) gets in for free. Children cannot attend without at least one adult per group. Adult tickets are £10, children are £5. Write a function that takes in an array of ages for a group and returns a total price for tickets.**
 
 ```
 javascript
@@ -145,18 +145,21 @@ const totalPrice = (group, adultPrice, childPrice) => {
 
    // reduce to turn into one number 
 
-   const totalPrice = tickets.reduce( (runningTotal, current) => {
+   const total = tickets.reduce( (runningTotal, current) => {
 
       return runningTotal + current
 
       })
 
 
-   return totalPrice
+   return total
 
 }
 
-totalPrice(groupAges,adultTix,childTix)
+
+// this line runs the function, wrapped in a console.log so that the result is printed.
+
+console.log(totalPrice(groupAges,adultTix,childTix))
 
 ```
 

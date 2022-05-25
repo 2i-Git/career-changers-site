@@ -7,7 +7,7 @@ lessons: [
         header: "Lesson 1: JavaScript and Node",
         content: "
 
-Throughout this guide, we will be working in JavaScript. Why JavaScript? Because it is used everywhere! Javascript is used in modern web frameworks like React (created and used by Meta/Facebook) and Vue (used by Netflix and others), it is used to script tests in frameworks like Cypress and Postman, and it can even be used to create art and visuals using libraries like three.js and p5.js. In fact, according to PluralSight, it is the number one most learned technology on their platform.
+Throughout this guide, we will be working in JavaScript. Why JavaScript? Because it is used everywhere! JavaScript is used in modern web frameworks like React (created and used by Meta/Facebook) and Vue (used by Netflix and others), it is used to script tests in frameworks like Cypress and Postman, it can even be used to create art and visuals using libraries like three.js and p5.js. In fact, according to PluralSight, it is the number one most learned technology on their platform.
 
 
 Another great reason to learn JavaScript is that it is a comparatively beginner-friendly language: it is reasonably easy to read, has a forgiving syntax, and a lot of the more complex functionality is abstracted into nice, easy to use methods.
@@ -93,7 +93,7 @@ The best way to learn to code is by doing, so for best results, you will want to
 
         ### Constants:
 
-        The downside of variables is that they are sometimes too easy to change! So what if you want to hold onto a value that will not change during runtime? We would use a constant instead. Constants are declared just like variables, except that we use const instead of let.
+        The downside of variables is that they are sometimes too easy to change! So, what if you want to hold onto a value that will not change during runtime? We would use a constant instead. Constants are declared just like variables, except that we use const instead of let.
 
         ```
         javascript
@@ -118,7 +118,7 @@ The best way to learn to code is by doing, so for best results, you will want to
         TIP: Being sure to use a constant rather than a variable when appropriate will look good on a code challenge, as they make code less prone to bugs.
 
 
-        TIP: In javascript, you can also declare a variable using 'var'. This is an older style that still pops up now and then in code, but is generally discouraged as it can be accessed anywhere in the code ('globally scoped'), as opposed to 'let' which can only be referred to from the block of code in which it is declared ('block scoped'). [This article](https://www.tutorialspoint.com/es6/es6_variables.htm) covers scope in more detail and with examples.
+        TIP: In JavaScript, you can also declare a variable using 'var'. This is an older style that still pops up now and then in code but is generally discouraged as it can be accessed anywhere in the code ('globally scoped'), as opposed to 'let' which can only be referred to from the block of code in which it is declared ('block scoped'). [This article](https://www.tutorialspoint.com/es6/es6_variables.htm) covers scope in more detail and with examples.
         
 
 
@@ -189,7 +189,7 @@ Some other data types that you might come across (usually when things go wrong):
 
 #### Null:
 
-Null represents the intentional absence of value. Some operations will return null if unsuccessful so you can actually check for a null result in your code.
+Null represents the intentional absence of value. Some operations will return null if unsuccessful so you can check for a null result in your code.
 
 #### Undefined:
 
@@ -427,9 +427,9 @@ Check your code against the following [cheatsheet](https://replit.com/@LewisSaun
         '
     },
     {
-        header: "Lesson 5: Arrays, Objects and methods",
+        header: "Lesson 5: Arrays, Objects and Methods",
         content: '
-        We have already looked at some of the basic data types such as numbers and strings, but what if we want to collect several strings or numbers together to do something with them? To do that, we use arrays and Objects. These will often have different names in other languages, but they generally work the same.
+        We have already looked at some of the basic data types such as numbers and strings, but what if we want to collect several strings or numbers together to do something with them? To do that, we use arrays and objects. These will often have different names in other languages, but they generally work the same.
 
 
 ### Arrays:
@@ -542,7 +542,7 @@ const removedFruit = fruits.pop()
 
 ### Objects:
 
-Objects are similar to arrays in that they are collections of elements. The issue with arrays is that they can only be accessed by an index, and their order is not strictly guaranteed. Objects are different because they use key and value pairs to arrange information. You can think of the key as the label that be used to look up the value. Similar to arrays, the value can be any data type, including nested arrays and objects. This allows us to construct and access complex data structures.
+Objects are similar to arrays in that they are collections of elements. The issue with arrays is that they can only be accessed by an index, and their order is not strictly guaranteed. Objects are different because they use key and value pairs to arrange information. You can think of the key as the label that be used to look up the value. Like arrays, the value can be any data type, including nested arrays and objects. This allows us to construct and access complex data structures.
 
 ```
 javascript
@@ -738,7 +738,7 @@ while (true) {
 ```
 
 
-For loops will run for a predefined length. This is either defined manually in an older-style for loop, or is defined by the length of the array or object in the case of more modern for in and for of loops.
+For loops will run for a predefined length. This is either defined manually in an older style for loop, or is defined by the length of the array or object in the case of more modern for in and for of loops.
 
 
 ```
@@ -817,6 +817,11 @@ for (number of numbers) {
    }
 
 }
+
+
+// print out the results
+
+console.log(counter)
 
 ```
 
@@ -962,7 +967,7 @@ console.log(canBoardPlane(myPassport,myWallet))
 
 ### Truthy and Falsy
 
-An important aspect of Javascript is that it is *loosely-typed*. This means that we can assign a value to a variable without having to explicitly state the data type. The compiler just infers what data type the variable should be. This makes Javascript simpler to learn, read and write in general, but it can also occasionally slip us up as data can be interpreted as a different type. A simple example is a string containing the number "3". This can be interpreted by the compiler as a string, or as a number if we were to write an if statement containing " "3" >= 3".
+An important aspect of JavaScript is that it is *loosely typed*. This means that we can assign a value to a variable without having to explicitly state the data type. The compiler just infers what data type the variable should be. This makes JavaScript simpler to learn, read and write in general, but it can also occasionally slip us up as data can be interpreted as a different type. A simple example is a string containing the number "3". This can be interpreted by the compiler as a string, or as a number if we were to write an if statement containing " "3" >= 3".
 
 In the same vein, all data can be interpreted as a boolean value and we call this *truthy* or *falsy* . The rules that govern these are sometimes a bit strange, so you can always just look up a list like this one:
 
@@ -1046,7 +1051,7 @@ function checkQueueHeights(visitorHeights,minimumHeight){
 ```
 
 
-###### 2.	create a new empty array for the result
+###### 2.	Create a new empty array for the result.
 
 
 ```
