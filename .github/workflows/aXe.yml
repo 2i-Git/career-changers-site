@@ -3,7 +3,6 @@ name: Axe
 on:
   push:
     branches:
-      - master
       - aXe
   pull_request:
     branches:
