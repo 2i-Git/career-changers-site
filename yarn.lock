@@ -2622,10 +2622,10 @@
   "resolved" "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz"
   "version" "1.11.0"
 
-"axe-core@^4.3.5":
-  "integrity" "sha512-WKTW1+xAzhMS5dJsxWkliixlO/PqC4VhmO9T4juNYcaTg9jzWiJsou6m5pxWYGfigWbwzJWeFY6z47a+4neRXA=="
-  "resolved" "https://registry.npmjs.org/axe-core/-/axe-core-4.3.5.tgz"
-  "version" "4.3.5"
+"axe-core@^4.3.5", "axe-core@^4.4.2":
+  "integrity" "sha512-LVAaGp/wkkgYJcjmHsoKx4juT1aQvJyPcW09MLCjVTh3V2cc6PnyempiLMNH5iMdfIX/zdbjUx2KDjMLCTdPeA=="
+  "resolved" "https://registry.npmjs.org/axe-core/-/axe-core-4.4.2.tgz"
+  "version" "4.4.2"
 
 "axios@^0.21.1":
   "integrity" "sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg=="
