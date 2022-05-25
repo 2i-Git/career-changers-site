@@ -2,9 +2,13 @@ name: Axe
 
 on:
   push:
-    branches: [main]
+    branches:
+      - master
+      - aXe
   pull_request:
-    branches: [main]
+    branches:
+      - master
+      -aXe
 
 jobs:
   axe:
