@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 
@@ -8,7 +8,17 @@ import "./ImageCard.scss";
 
 const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extraInfo }) => {
 
-  return (
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 768;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  })
+
+  return width > breakpoint ?
+
+    // DESKTOP VERSION //
+
     // Changes
     <Card id="noBorder" className={clsx("image-card text-white text-center", className)}>
       <div id="mainImgContainer">
@@ -56,7 +66,32 @@ const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extr
       </div>
 
     </Card>
-  );
+
+    :
+
+        // MOBILE VERSION //
+
+    <Card id="noBorder" className={clsx("image-card text-white text-center", className)}>
+      
+      <div id="blue-image-background-mobile">
+        <div id="blue-image-mobile">
+          <Image className="image" fileName={imageFileName} alt={imageAlt || header || subheader} />
+        </div>
+      </div>
+    
+
+      <Card.ImgOverlay className="no-padding">
+        <Container>
+          <div className="intro-text">
+            <div className="intro-lead-in">{subheader}</div>
+            {/* Change */}
+            <div className="intro-heading">{header}</div>
+            {/* <div className="intro-heading text-uppercase">{header}</div> */}
+            {extraInfo}
+          </div>
+        </Container>
+      </Card.ImgOverlay>
+    </Card>
 };
 
 ImageCard.propTypes = {
