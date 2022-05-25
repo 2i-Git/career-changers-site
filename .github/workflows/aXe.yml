@@ -29,7 +29,7 @@ jobs:
       - run: npm install -g gatsby-cli@2.12.34
       - run: gatsby build
       - run: ls -la public
-      - run: npm start & npx wait-on http://localhost:8000
+      - run: gatsby develop & npx wait-on http://localhost:8000
       - name: Run axe
         run: |
           npm install -g @axe-core/cli
