@@ -111,7 +111,8 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <CookieConsent
+      {/* COOKIES FUNCTIONALITY COMMENTED OUT */}
+      {/* <CookieConsent
         location="bottom"
         buttonText="Accept"
         enableDeclineButton={true}
@@ -129,7 +130,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
         declineButtonStyle={{ "border-radius": "3px" }} flipButtons >
         <strong>This site currently does not use cookies, this banner is for demo purposes. </strong> We use them to enhance and customise your browsing experience, as well as for analytics and metrics about our visitors on this website.
         If you decline, your information will not be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
-      </CookieConsent>
+      </CookieConsent> */}
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}

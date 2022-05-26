@@ -1,6 +1,8 @@
 // Styling for the navbar
 .navbar-root {
-  background-color: $navy;
+  // Change
+  background-color: $primary;
+  //
   .navbar-toggler {
     font-size: 20px;
     right: 0;
@@ -17,6 +19,7 @@
     text-shadow: 0 0 100px $lightblu,
     0 0 32px $lightblu;
     @include brand-font;
+    font-weight: 700;
     &.active,
     &:active,
     &:focus,
@@ -43,7 +46,9 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $transnavy;
+      // Change
+      background-color: $transprimary;
+      //
       font-size: 1em;
       .navbar-brand {
         font-size: 1.2em;

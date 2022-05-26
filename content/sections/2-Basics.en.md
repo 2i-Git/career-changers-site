@@ -1,6 +1,6 @@
 ---
 anchor: "Basics"
-header: "write your first code"
+header: "Write your first code"
 subheader: "Over the next six lessons, you'll learn everything you need to start tackling code challenges"
 lessons: [
     {
