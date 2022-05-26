@@ -8,11 +8,15 @@ import "./ImageCard.scss";
 
 const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extraInfo }) => {
 
-  const [width, setWidth] = useState(window.innerWidth)
-  const breakpoint = 768;
+  const isBrowser = typeof window !== "undefined"
 
+  const breakpoint = 768;
+  const [width, setWidth] = useState(typeof window !== "undefined" ? window.innerWidth : breakpoint)
+  
   useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
+    if (isBrowser) {
+      window.addEventListener("resize", () => setWidth(window.innerWidth));
+    }
   })
 
   return width > breakpoint ?
