@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+          accessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
       - run: npm install && npm install -g @lhci/cli@0.8.x
       - run: npm run build
       - name: Run lighthouse
