@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+          temporaryPublicStorage: true
         env:
           github-token: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
       - run: npm install && npm install -g @lhci/cli@0.8.x
