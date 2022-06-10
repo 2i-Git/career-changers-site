@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import TeamMember from "components/TeamMember";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
@@ -37,7 +37,15 @@ const Team = ({ className, frontmatter }) => {
           <p className="large text-dark">{rootContent}</p>
         </Col>
       </Row>
+      <br/>
+      <br/>
+      <div className="help">
+      <Button size="xl" variant="primary" className="text-uppercase" onClick={() => window.open('https://2itesting.com/vacancy/get-to-know-us/', '_blank').focus()}>
+        Join Us!
+      </Button>
+      </div>
     </PageSection>
+    
   );
 };
 

@@ -9,6 +9,7 @@ import useWindowOnScroll from "hooks/useWindowOnScroll";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import Icon from "components/Icon";
 import NavItem from "components/NavItem";
+import Logo from "../../../content/assets/images/white-2i-logo.png"
 
 import "./Navbar.scss";
 
@@ -50,6 +51,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
     >
       <Container>
         <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick} as="h1">
+          <img src={Logo} className={clsx("white-logo-main", { "white-logo-shrink": shrink })} alt="2i Logo"/>
           {brand}
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
