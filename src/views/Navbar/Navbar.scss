@@ -27,6 +27,33 @@
       color: darken($white, 20%) !important;
     }
   }
+
+
+  
+
+  .white-logo-main {
+    margin-top: -6px;
+    max-width: 80px;
+    padding-right: 10px;
+    cursor: pointer;    
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+
+  .white-logo-shrink {
+    margin-top: -6px;
+    max-width: 60px;
+    padding-right: 10px;
+    cursor: pointer;    
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+
+
+
+
 }
 @media (min-width: 1200px) {
   .navbar-root {
